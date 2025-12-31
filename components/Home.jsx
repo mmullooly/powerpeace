@@ -3,12 +3,13 @@
 export default function Home(){
     return(
         <div>
-            <div>
-                <h1>Power and Peace</h1>
+            <section className="hero">
+                <h1>Power &amp; Peace</h1>
                 <h2>World Simulation Game</h2>
                 <h3>Power and Peace is a live, turnless geopolitical simulation where players become world leaders — negotiating, managing resources, and responding to crises in real time.</h3>
-            </div>
-            <div>
+            </section>
+
+            <section className="panel section" style={{ marginTop: 18 }}>
                 <p>&quot;Power &amp; Peace: The Global Simulation Game&quot; is a turnless, diceless, real-time
                     geopolitical simulation megagame where players become leaders of up to 26
                     independent nations (A-Z) spread across 4 fictional planets. Nations are tasked with
@@ -38,7 +39,7 @@ export default function Home(){
                     theory, supply chains, diplomatic relations, economy management, resource locations,
                     military conflicts, regional idiosyncrasies, etc — in a high-stakes and real-time game
                     format.</p>
-            </div>
+            </section>
         </div>
     )
 }
