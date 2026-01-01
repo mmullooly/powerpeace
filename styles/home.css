@@ -2,17 +2,42 @@
 	width: 100%;
 }
 
+/* Shared container so hero + middle section align perfectly */
+.homeWrap{
+	width: min(1100px, 92vw);
+	margin: 0 auto;
+}
+
+/* HERO */
 .homeHero{
+	position: relative;
 	min-height: 60vh;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	padding: 80px 20px;
+	padding: 92px 0; /* no side padding here; container handles it */
+	overflow: hidden;
 }
 
+/* Full-width banner background */
+.homeHero::before{
+	content: "";
+	position: absolute;
+	inset: 0;
+	/* Replace this with an actual image if you want later */
+	background:
+		linear-gradient(180deg, rgba(8,16,34,0.78) 0%, rgba(8,16,34,0.88) 65%, rgba(6,12,26,0.92) 100%),
+		radial-gradient(900px 600px at 20% 10%, rgba(80,150,255,0.20), transparent 55%),
+		radial-gradient(700px 500px at 80% 35%, rgba(120,255,200,0.14), transparent 55%),
+		radial-gradient(900px 700px at 50% 85%, rgba(255,140,200,0.12), transparent 60%);
+	z-index: 0;
+}
+
+/* Keep content above banner */
 .homeHeroInner{
-	width: min(1000px, 92vw);
+	position: relative;
+	z-index: 1;
 	text-align: center;
+	padding: 0 20px; /* inner padding only, consistent with cards */
 }
 
 .homeTitle{
@@ -43,23 +68,13 @@
 	gap: 12px;
 }
 
-.homePrimaryButton{
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 12px 20px;
-	border-radius: 999px;
-	text-decoration: none;
-	font-weight: 600;
-}
-
+/* CARDS */
 .homeCards{
-	padding: 48px 20px 72px 20px;
+	padding: 56px 0 88px 0; /* container handles side padding */
 }
 
 .homeCardsInner{
-	width: min(1100px, 92vw);
-	margin: 0 auto;
+	padding: 0 20px; /* matches hero inner padding */
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 22px;
@@ -69,6 +84,10 @@
 	border-radius: 16px;
 	padding: 28px 22px;
 	text-align: center;
+
+	/* This is the trick for aligned bottom buttons */
+	display: flex;
+	flex-direction: column;
 }
 
 .homeCardTitle{
@@ -83,24 +102,24 @@
 	opacity: 0.9;
 }
 
-.homeCardButton{
-	margin-top: 22px;
-	display: inline-flex;
-	align-items: center;
+/* Push CTA to bottom so all 3 buttons align horizontally */
+.homeCardCta{
+	margin-top: auto;
+	padding-top: 22px;
+	display: flex;
 	justify-content: center;
-	padding: 10px 18px;
-	border-radius: 999px;
-	text-decoration: none;
-	font-weight: 600;
 }
 
 /* Simple mobile stacking */
 @media (max-width: 900px){
+	.homeHero{
+		min-height: auto;
+		padding: 72px 0;
+	}
 	.homeCardsInner{
 		grid-template-columns: 1fr;
 	}
-	.homeHero{
-		min-height: auto;
-		padding: 64px 20px;
+	.homeCardCta{
+		padding-top: 18px;
 	}
 }
