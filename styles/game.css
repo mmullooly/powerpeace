@@ -1,30 +1,439 @@
 
 /* THE GAME */
 
+/* game.css */
 
-/* Add spacing between buttons everywhere you use .ctaRow */
-.ctaRow{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 12px;
-	align-items: center;
+.the-game{
+	background: transparent; /* let body own the background */
+	color: rgba(255,255,255,0.92);
+	position: relative;
+	isolation: isolate;
 }
 
-/* Put “What’s on the table” + “What a session feels like” next to each other */
-.the-game .splitRow{
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 18px;
-	align-items: start;
+
+
+.the-game .wrap,
+.the-game .heroInner{
+	width: min(1100px, calc(100% - 48px));
+	margin: 0 auto;
 }
 
-.the-game .splitCol{
-	width: 100%;
-}
 
-@media (min-width: 900px){
-	.the-game .splitRow{
-		grid-template-columns: 1fr 1fr;
-		gap: 22px;
+
+@media (max-width: 680px){
+	.the-game .wrap,
+	.the-game .heroInner{
+		width: min(1100px, calc(100% - 28px));
 	}
+}
+
+/* readable text column */
+.the-game p{
+	max-width: 90ch;
+	line-height: 1.55;
+	color: rgba(255,255,255,0.86);
+}
+
+.the-game .section{
+	padding: clamp(44px, 7vw, 88px) 0;
+}
+
+.the-game .hero{
+	padding: clamp(64px, 10vw, 120px) 0 40px;
+	text-align: center;
+	position: relative;
+}
+
+.the-game .eyebrow{
+	letter-spacing: 0.24em;
+	font-size: 12px;
+	opacity: 0.8;
+	margin: 0 0 12px;
+}
+
+.the-game h1{
+	font-size: clamp(60px, 6vw, 74px);
+	line-height: 1.02;
+	margin: 0 0 10px;
+}
+
+.the-game h2{
+	font-size: clamp(16px, 2vw, 22px);
+	font-weight: 500;
+	margin: 0 auto 18px;
+	max-width: 52ch;
+	opacity: 0.9;
+}
+
+.the-game .eye {
+	letter-spacing: 0.24em;
+	font-size: 13px;
+	opacity: 0.8;
+}
+
+.the-game .lede{
+	margin: 0 auto 22px;
+	font-size: 16px;
+}
+
+.the-game .ctaRow{
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 18px;
+}
+
+/* Buttons */
+.the-game .btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+	padding: 12px 18px;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 650;
+	letter-spacing: 0.01em;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.06);
+	color: rgba(255,255,255,0.92);
+	box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+	transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.the-game .btn:hover{
+	transform: translateY(-1px);
+	background: rgba(255,255,255,0.10);
+	border-color: rgba(255,255,255,0.22);
+}
+
+.the-game .btn:focus-visible{
+	outline: 3px solid rgba(120,180,255,0.9);
+	outline-offset: 3px;
+}
+
+.the-game .btn.primary{
+	background: rgba(80,150,255,0.22);
+	border-color: rgba(120,180,255,0.38);
+}
+
+.the-game .btn.primary:hover{
+	background: rgba(80,150,255,0.28);
+	border-color: rgba(120,180,255,0.50);
+}
+
+.the-game .btn.secondary{
+	background: rgba(255,255,255,0.06);
+}
+
+/* Hero media */
+.the-game .heroMedia{
+	margin: 34px auto 0;
+	display: grid;
+	grid-template-columns: 1.35fr 0.65fr;
+	gap: 14px;
+	align-items: stretch;
+}
+
+@media (max-width: 900px){
+	.the-game .heroMedia{
+		grid-template-columns: 1fr;
+	}
+}
+
+.the-game .media{
+	margin: 0;
+	border-radius: 18px;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.05);
+	box-shadow: 0 22px 60px rgba(0,0,0,0.30);
+	overflow: hidden;
+}
+
+.the-game .media.primary .imgPlaceholder{
+	aspect-ratio: 16 / 9;
+}
+
+.the-game .mediaStack{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 14px;
+}
+
+@media (max-width: 900px){
+	.the-game .mediaStack{
+		grid-template-rows: none;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 560px){
+	.the-game .mediaStack{
+		grid-template-columns: 1fr;
+	}
+}
+
+.the-game .media .imgPlaceholder{
+	aspect-ratio: 4 / 3;
+	display: grid;
+	place-items: center;
+	background:
+		linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 55%, rgba(255,255,255,0.06) 100%);
+}
+
+.the-game .imgPlaceholder span{
+	font-size: 12px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.70);
+	padding: 12px;
+	text-align: center;
+}
+
+.the-game figcaption{
+	padding: 12px 14px;
+	font-size: 13px;
+	color: rgba(255,255,255,0.78);
+}
+
+/* Stats strip */
+.the-game .statsRow{
+	margin: 18px auto 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+}
+
+@media (max-width: 900px){
+	.the-game .statsRow{
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+.the-game .stat{
+	border-radius: 16px;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.05);
+	padding: 14px 14px 12px;
+	text-align: center;
+}
+
+.the-game .statNum{
+	margin: 0;
+	font-size: 26px;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	color: rgba(255,255,255,0.94);
+}
+
+.the-game .statLabel{
+	margin: 4px 0 0;
+	font-size: 12px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	opacity: 0.78;
+	max-width: none;
+}
+
+/* Section headings */
+.the-game h3{
+	margin: 0 0 10px;
+	font-size: clamp(22px, 3vw, 34px);
+	letter-spacing: -0.02em;
+}
+
+.the-game .micro{
+	margin: 0 0 22px;
+	opacity: 0.82;
+}
+
+/* Grids + cards */
+.the-game .grid{
+	display: grid;
+	gap: 14px;
+	margin-top: 18px;
+}
+
+.the-game .grid.two{
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.the-game .grid.three{
+	grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px){
+	.the-game .grid.two,
+	.the-game .grid.three{
+		grid-template-columns: 1fr;
+	}
+}
+
+.the-game .card{
+	border-radius: 18px;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.05);
+	padding: 18px 18px 16px;
+	box-shadow: 0 22px 60px rgba(0,0,0,0.26);
+}
+
+.the-game .card h4{
+	margin: 0 0 8px;
+	font-size: 16px;
+	letter-spacing: -0.01em;
+}
+
+.the-game .card p{
+	margin: 0;
+}
+
+/* Feature rows (text + photo) */
+.the-game .featureRow{
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr;
+	gap: 16px;
+	align-items: center;
+	padding: 18px;
+	border-radius: 22px;
+	border: 1px solid rgba(255,255,255,0.12);
+	background: rgba(255,255,255,0.04);
+	box-shadow: 0 28px 70px rgba(0,0,0,0.26);
+	margin-top: 16px;
+}
+
+.the-game .featureRow:first-child{
+	margin-top: 0;
+}
+
+.the-game .featureRow.reverse{
+	grid-template-columns: 0.8fr 1.2fr;
+}
+
+.the-game .featureRow.reverse .featureText{
+	order: 2;
+}
+
+.the-game .featureRow.reverse .featureMedia{
+	order: 1;
+}
+
+@media (max-width: 900px){
+	.the-game .featureRow,
+	.the-game .featureRow.reverse{
+		grid-template-columns: 1fr;
+	}
+	.the-game .featureRow.reverse .featureText,
+	.the-game .featureRow.reverse .featureMedia{
+		order: initial;
+	}
+}
+
+.the-game .featureMedia{
+	margin: 0;
+	border-radius: 18px;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.05);
+	overflow: hidden;
+}
+
+.the-game .featureMedia .imgPlaceholder{
+	aspect-ratio: 4 / 3;
+}
+
+/* Lists */
+.the-game .bullets{
+	margin: 10px 0 0;
+	padding-left: 18px;
+}
+
+.the-game .bullets li{
+	margin: 10px 0;
+	color: rgba(255,255,255,0.86);
+}
+
+.the-game .steps{
+	margin: 10px 0 0;
+	padding-left: 18px;
+}
+
+.the-game .steps li{
+	margin: 10px 0;
+	color: rgba(255,255,255,0.86);
+}
+
+/* Callouts */
+.the-game .callout{
+	margin-top: 14px;
+	border-radius: 18px;
+	border: 1px solid rgba(120,180,255,0.28);
+	background: rgba(80,150,255,0.10);
+	padding: 14px 14px 12px;
+}
+
+.the-game .callout p{
+	margin: 0;
+	max-width: none;
+}
+
+.the-game .callout p + p{
+	margin-top: 8px;
+}
+
+/* Gallery */
+.the-game .gallery{
+	margin-top: 22px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+}
+
+@media (max-width: 900px){
+	.the-game .gallery{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 520px){
+	.the-game .gallery{
+		grid-template-columns: 1fr;
+	}
+}
+
+.the-game .galleryItem{
+	margin: 0;
+	border-radius: 18px;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.05);
+	overflow: hidden;
+}
+
+.the-game .galleryItem .imgPlaceholder{
+	aspect-ratio: 1 / 1;
+}
+
+/* CTA band */
+.the-game .ctaBand{
+	border-radius: 26px;
+	border: 1px solid rgba(255,255,255,0.14);
+	background:
+		radial-gradient(700px 300px at 30% 20%, rgba(80,150,255,0.20), transparent 55%),
+		radial-gradient(700px 300px at 80% 70%, rgba(120,255,200,0.12), transparent 60%),
+		rgba(255,255,255,0.04);
+	padding: clamp(18px, 4vw, 30px);
+	box-shadow: 0 34px 90px rgba(0,0,0,0.28);
+	text-align: center;
+}
+
+.the-game .ctaBand p{
+	margin: 8px auto 0;
+}
+
+/* Small polish */
+.the-game strong{
+	color: rgba(255,255,255,0.96);
+}
+
+.the-game em{
+	color: rgba(255,255,255,0.90);
 }

@@ -179,12 +179,18 @@ export default function Playtests(){
 							<div className="playtestsBullet">Placeholder highlight: one moment that felt “this is it.”</div>
 						</div>
 					</div>
-                    <div className="playtestsPanel playtestsPanelFull">
-                        <h2 className="playtestsPanelTitle">Interested in bringing Power &amp; Peace to your campus?</h2>
-                        <p className="playtestsPanelText">
-                        <Link className="btn secondary" to="/contact">Let's Talk</Link>
-                        </p>
-                    </div>
+					<section className="section" aria-labelledby="ctaplaytest">
+				<div className="wrap">
+					<div className="ctaBandplaytest">
+						<h2>Interested in bringing Power &amp; Peace to your campus?</h2>
+						<p>Tell us your group size and setting. We’ll recommend a session format and next steps.</p>
+
+						<div className="ctaRowplaytest">
+							<a className="btn primary" href="/contact">Request Information</a>
+						</div>
+					</div>
+				</div>
+			</section>
 				</div>
 			</section>
 		</div>

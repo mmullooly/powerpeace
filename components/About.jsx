@@ -1,50 +1,216 @@
-
+import "../styles/about.css"
 
 export default function About(){
 
-    return (
-        <div>
-            <h1>About Power and Peace</h1>
-            <div>
-                <p className="subtext">Maybe have about blurb like this, like 2 sentences about the game to entice them to read more.</p>
-            </div>
-            <img src="../assets/about1" alt="Game in action"></img>
-            <div>
-                <p>Founded in October 2024 by James Mullooly, Playbright LLC has developed Power &amp;
-Peace, a groundbreaking educational simulation game which transforms how young
-people engage with complex geopolitical systems. Combining the immersive elements
-of real-time strategy gaming with real-world academic objectives in economics, social
-skills, and macro-management, this innovation fills a substantial gap in both
-educational tools and entertainment products on the market. </p>
+	const gallery = [
+        { src: "../src/assets/starter.jpeg", alt: "Early prototype materials and layout" },
+        { src: "../src/assets/7482.png", alt: "Design demo prototype" },
+		{ src: "../src/assets/drawing.jpg", alt: "Early prototype materials and layout" },
+        { src: "../src/assets/7409.png", alt: "Iteration notes and balance adjustments" },
+		{ src: "../src/assets/demo.jpg", alt: "Design sketches and systems planning" },
+		{ src: "../src/assets/presentation.jpg", alt: "Founder presenting the game concept" },
+	]
 
-<p>James Mullooly envisioned a better way for students to interact with the world’s toughest
-challenges — then built a team, company, and product to make that vision real. Mullooly’s
-academic and creative background is uniquely suited to inventing an innovation of this scope.
-His coursework in leadership, diplomacy, arts entrepreneurship, immersive storytelling, war
-and peace studies, and child development reflects a rare synthesis of skills across international
-relations, narrative design, education, and game theory. Graduating Summa Cum Laude, his
-academic record supports his conceptual vision with intellectual rigor.</p>
+	return (
+		<main className="about">
+			{/* TOP: */}
+			<section className="about__hero">
+				<div className="about__wrap about__heroGrid">
+					<div className="about__brand">
+						<div className="about__logoRow">
+							<div className="about__brandText">
+								<p className="about__kicker">Playbright LLC</p>
+								<h1 className="about__title">The people behind Power &amp; Peace</h1>
+							</div>
+						</div>
 
-<p>Where others have struggled to make geopolitical simulations that are truly educational and
-immersive, Mullooly and his team succeeded by designing a real-time, fully simultaneous
-game.</p>
+						<p className="about__lede">
+							Founded in October 2024 by <strong>James Mullooly</strong>, Playbright builds learning experiences that treat
+							complex systems with respect: real incentives, real tradeoffs, real collaboration.
+						</p>
 
-<p>Unlike traditional board games, Power &amp; Peace avoids simplifying global politics with turn-
-based abstractions. It creates a live geopolitical ecosystem, where 10–100 players can act and
-play at the same time. Designing such a novel dynamic system demanded not just game design
-talent but a deep understanding of systems thinking, educational psychology, and the process
-of innovation. Mullooly pushed old gameplay models further by building an entirely new
-infrastructure and data system that could accommodate non-facilitated, turnless, and long-
-form play. </p>
+						<div className="about__facts">
+							<div className="about__fact">
+								<p className="about__factLabel">Format</p>
+								<p className="about__factValue">Real-time, simultaneous simulation</p>
+							</div>
+							<div className="about__fact">
+								<p className="about__factLabel">Scale</p>
+								<p className="about__factValue">10–100 players</p>
+							</div>
+							<div className="about__fact">
+								<p className="about__factLabel">Focus</p>
+								<p className="about__factValue">Economics • diplomacy • leadership • systems</p>
+							</div>
+						</div>
+					</div>
 
-<p>Behind this innovation is an exemplary interdisciplinary team. Under Mullooly’s leadership, the
-team includes award-winning software designers, computer engineers, and microarchitecture
-specialists. He also curated a five-member Advisory Board of national experts in education,
-curriculum assessment, commercialization, and game design. This Board includes two veteran
-designers of previous geopolitical education games, John Hunter and Ben Lawless. This
-strategic network ensures that Power &amp; Peace is being developed not in isolation from, but
-with valuable guidance from industry leaders who recognize its disruptive potential.</p> </div>
-        </div>
-    )
+					<figure className="about__heroMedia">
+						<img
+							className="about__heroImg"
+							src="../src/assets/p1.png"
+							alt="Power & Peace in action"
+							loading="lazy"
+						/>
+						<figcaption className="about__caption">
+							Power &amp; Peace is made by Playbright LLC.
+						</figcaption>
+					</figure>
+				</div>
+			</section>
 
+			{/* MIDDLE: show the method (evidence > adjectives) */}
+			<section className="about__section">
+				<div className="about__wrap">
+					<header className="about__sectionHead">
+						<h2 className="about__h2">How it's built</h2>
+						<p className="about__sub">
+							This product is the result of ongoing repeated cycles: prototype → playtest → revise.
+						</p>
+					</header>
+
+					<div className="about__grid3">
+						<div className="about__card">
+							<p className="about__cardEyebrow">01</p>
+							<h3 className="about__h3">Systems first</h3>
+							<p className="about__p">
+								The core is a live ecosystem: decisions overlap, information is imperfect, and outcomes emerge from interaction.
+								The design goal is not “correct answers,” but durable judgment.
+							</p>
+						</div>
+
+						<div className="about__card">
+							<p className="about__cardEyebrow">02</p>
+							<h3 className="about__h3">Playtested reality</h3>
+							<p className="about__p">
+								Each iteration is driven by what real groups do: where they coordinate, where they freeze, where strategies appear,
+								and what teachers actually need to run it smoothly.
+							</p>
+						</div>
+
+						<div className="about__card">
+							<p className="about__cardEyebrow">03</p>
+							<h3 className="about__h3">Packaged for adoption</h3>
+							<p className="about__p">
+								We continue to iterate and explore scalable modalities to bring this to a wider audience.
+							</p>
+						</div>
+					</div>
+
+					<div className="about__gallery">
+						{gallery.map((img) => (
+							<figure className="about__shot" key={img.src}>
+								<img className="about__shotImg" src={img.src} alt={img.alt} loading="lazy" />
+							</figure>
+						))}
+					</div>
+
+					<p className="about__caption about__caption--center">
+						Behind the scenes of making of Power &amp; Peace: early sketches and prototypes.
+					</p>
+				</div>
+			</section>
+
+			{/* FOUNDER: one tight, credible paragraph + visual */}
+			<section className="about__section about__section--tint">
+				<div className="about__wrap about__founderGrid">
+					<figure className="about__founderMedia">
+						<img
+							className="about__founderImg"
+							src="../src/assets/IMG_7786.jpg"
+							alt="James Mullooly, Founder"
+							loading="lazy"
+						/>
+						<figcaption className="about__caption">
+							James Mullooly, Creator of Power & Peace
+						</figcaption>
+					</figure>
+
+					<div className="about__founderText">
+						<h2 className="about__h2">James Mullooly</h2>
+						<p className="about__p">
+							James built Playbright around a straightforward question: what if students could practice navigating modern geopolitics
+							the way it actually feels—fast, interdependent, and social? His academic and creative work spans leadership, diplomacy,
+							immersive storytelling, and child development, bringing the right mix of systems thinking and human-centered design to the product.
+						</p>
+
+						<div className="about__miniGrid">
+							<div className="about__mini">
+								<p className="about__miniLabel">Design principle</p>
+								<p className="about__miniValue">Students learn by doing, negotiating, and adapting.</p>
+							</div>
+							<div className="about__mini">
+								<p className="about__miniLabel">What stays constant</p>
+								<p className="about__miniValue">Clarity, fairness, and meaningful consequences.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* PLAYBRIGHT */}
+<section className="about__section">
+	<div className="about__wrap">
+		<header className="about__sectionHead">
+			<h2 className="about__h2">Playbright LLC</h2>
+			<p className="about__sub">
+				Power &amp; Peace is led by founder James Mullooly and built by an interdisciplinary team,
+				with guidance from a five-member Advisory Board.
+			</p>
+		</header>
+
+		<div className="about__orgGrid">
+			{/* Team */}
+			<div className="about__orgCard">
+				<p className="about__orgEyebrow">Core Team</p>
+				<h3 className="about__orgTitle">Interdisciplinary by design</h3>
+				<p className="about__p">
+					Playbright brings together game and product design, software development, systems thinking,
+					and classroom-centered learning design. Playbright's team consists of award-winning artists and engineers with expertise in:
+				</p>
+
+				<ul className="about__bullets">
+					<li>Game &amp; systems design</li>
+					<li>Software &amp; technical infrastructure</li>
+					<li>UX and visual design</li>
+					<li>Education alignment and usability</li>
+				</ul>
+			</div>
+
+			{/* Advisory Board */}
+			<div className="about__orgCard">
+				<p className="about__orgEyebrow">Advisory Board</p>
+				<h3 className="about__orgTitle">Experts guiding the build</h3>
+				<p className="about__p">
+					Our five member Advisory Board supports Playbright with national experts in education, curriculum assessment, commercialization, and game design.
+                    Including: </p>
+                    <p></p>
+                    <p><strong>John Hunter,</strong>  creator of World Peace Game</p> 
+                    <p>and</p>
+                    <p><strong>Ben Lawless,</strong>  geopolitical education game designer</p>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+			{/* CLOSE: calm CTA */}
+			<section className="about__close">
+				<div className="about__wrap about__closeGrid">
+					<div>
+						<h2 className="about__h2">Let’s build together</h2>
+						<p className="about__p">
+							If you’re an educator exploring adoption, or a partner/investor exploring collaboration, we’ll share the materials that matter:
+							demos, playtest learnings, and the roadmap.
+						</p>
+					</div>
+
+					<div className="about__actions">
+						<a className="about__btn about__btn--primary" href="/contact">Get in Touch</a>
+						<a className="about__btn about__btn--ghost" href="/">Back to Home</a>
+					</div>
+				</div>
+			</section>
+		</main>
+	)
 }
