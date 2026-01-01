@@ -1,0 +1,30 @@
+
+/* THE GAME */
+
+
+/* Add spacing between buttons everywhere you use .ctaRow */
+.ctaRow{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+
+/* Put “What’s on the table” + “What a session feels like” next to each other */
+.the-game .splitRow{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 18px;
+	align-items: start;
+}
+
+.the-game .splitCol{
+	width: 100%;
+}
+
+@media (min-width: 900px){
+	.the-game .splitRow{
+		grid-template-columns: 1fr 1fr;
+		gap: 22px;
+	}
+}

@@ -1,0 +1,106 @@
+.home{
+	width: 100%;
+}
+
+.homeHero{
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 20px;
+}
+
+.homeHeroInner{
+	width: min(1000px, 92vw);
+	text-align: center;
+}
+
+.homeTitle{
+	margin: 0;
+	font-size: clamp(40px, 5vw, 64px);
+	line-height: 1.05;
+}
+
+.homeSubtitle{
+	margin: 10px 0 0 0;
+	font-size: clamp(18px, 2.2vw, 28px);
+	font-weight: 600;
+	opacity: 0.9;
+}
+
+.homeLead{
+	margin: 22px auto 0 auto;
+	max-width: 900px;
+	font-size: clamp(16px, 1.3vw, 20px);
+	line-height: 1.6;
+	opacity: 0.92;
+}
+
+.homeHeroActions{
+	margin-top: 28px;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+.homePrimaryButton{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 20px;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.homeCards{
+	padding: 48px 20px 72px 20px;
+}
+
+.homeCardsInner{
+	width: min(1100px, 92vw);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 22px;
+}
+
+.homeCard{
+	border-radius: 16px;
+	padding: 28px 22px;
+	text-align: center;
+}
+
+.homeCardTitle{
+	margin: 0;
+	font-size: 24px;
+}
+
+.homeCardText{
+	margin: 14px auto 0 auto;
+	max-width: 320px;
+	line-height: 1.6;
+	opacity: 0.9;
+}
+
+.homeCardButton{
+	margin-top: 22px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 18px;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/* Simple mobile stacking */
+@media (max-width: 900px){
+	.homeCardsInner{
+		grid-template-columns: 1fr;
+	}
+	.homeHero{
+		min-height: auto;
+		padding: 64px 20px;
+	}
+}

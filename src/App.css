@@ -1,3 +1,4 @@
+/* 
 /* ================================
    Power & Peace - Starter Theme
    Easy to redesign: change tokens in :root
@@ -47,8 +48,7 @@ body{
 	min-height: 100%;
 	position: relative;
 
-	/* Modern “deep ocean” background that won’t look like tiled Tumblr gradients */
-	background-color: #030b14;
+	background-color: #000000;
 	background-image:
 		radial-gradient(1200px 800px at 18% 8%, rgba(42,167,255,0.12), transparent 60%),
 		radial-gradient(900px 650px at 82% 12%, rgba(47,224,200,0.10), transparent 55%),
@@ -59,7 +59,7 @@ body{
 	background-attachment: fixed;
 }
 
-/* Subtle film-grain / texture overlay (feels more modern, less 2012 Tumblr) */
+/* Subtle film-grain / texture overlay */
 body::before{
 	content: "";
 	position: fixed;
@@ -220,23 +220,6 @@ p{
 	box-shadow: var(--shadow);
 }
 
-.kicker{
-	display: inline-flex;
-	align-items: center;
-	gap: 10px;
-	font-size: 0.95rem;
-	color: var(--muted);
-	margin-bottom: 10px;
-}
-
-.kickerDot{
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background: var(--accent);
-	box-shadow: 0 0 18px rgba(47,224,200,0.55);
-}
-
 .section{
 	margin-top: 22px;
 	padding: 22px;
@@ -278,7 +261,7 @@ img{
 }
 
 /* ================================
-   Buttons (optional for later)
+   Buttons
 ================================== */
 	.btn{
 		display: inline-flex;
@@ -319,35 +302,4 @@ img{
 	height: 1px;
 	background: rgba(255,255,255,0.10);
 	margin: 16px 0;
-}
-
-
-/* THE GAME */
-
-
-/* Add spacing between buttons everywhere you use .ctaRow */
-.ctaRow{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 12px;
-	align-items: center;
-}
-
-/* Put “What’s on the table” + “What a session feels like” next to each other */
-.the-game .splitRow{
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 18px;
-	align-items: start;
-}
-
-.the-game .splitCol{
-	width: 100%;
-}
-
-@media (min-width: 900px){
-	.the-game .splitRow{
-		grid-template-columns: 1fr 1fr;
-		gap: 22px;
-	}
 }

@@ -1,3 +1,4 @@
+import "../styles/game.css"
 export default function TheGame(){
 	return(
 		<main className="page the-game">
