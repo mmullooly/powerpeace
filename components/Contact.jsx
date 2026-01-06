@@ -12,8 +12,8 @@ export default function Contact(){
 
 	return(
 		<main className="contact" id="top">
-			<header className="contact__hero">
-				<div className="contact__container">
+			<header className="contact__heroWrap">
+				<div className="contact__hero">
 					<div className="contact__heroInner">
 						<h1 className="contact__title">Let's Connect</h1>
 						<p className="contact__subtitle">
@@ -24,16 +24,13 @@ export default function Contact(){
 							<a className="contact__btn contact__btn--primary" href="#book">
 								Book a Call
 							</a>
-							<a
-								className="contact__btn contact__btn--ghost"
-								href="mailto:james@powerpeace.org?subject=Power%20%26%20Peace%20Inquiry"
-							>
+							<a className="contact__btn contact__btn--ghost" href="mailto:james@powerpeace.org?subject=Power%20%26%20Peace%20Inquiry">
 								Email Us
 							</a>
 						</div>
 					</div>
-				</div>
-			</header>
+					</div>
+				</header>
 
 			<section className="contact__gridSection">
 				<div className="contact__container">
@@ -135,7 +132,7 @@ export default function Contact(){
 							<iframe
 								title="Power & Peace Booking Calendar"
 								className="contact__iframe"
-								src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Hp8Bhfu2D40bxrsTNHE7k2YoRdrZAqsu9R79jLpAhAm2FKUSyHILAKzU6uz621AFKFGI1MuXx?gv=true"
+								src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3XU7o1gOdWU6e8Aot82EwR2feTSBLyYpQu74YYang9OzaVXUqcnZuLf_NXiv7SLk3fvLWVzrHb?gv=true"
 							/>
 						</div>
 					</div>

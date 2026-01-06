@@ -4,12 +4,11 @@
 
 .playtestsHero{
 	padding: 76px 20px 34px 20px;
-	display: flex;
-	justify-content: center;
 }
 
 .playtestsHeroInner{
 	width: min(1100px, 92vw);
+	margin: 0 auto;
 	text-align: center;
 }
 

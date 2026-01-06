@@ -21,20 +21,20 @@ export default function TheGame(){
 					<div className="heroMedia" aria-label="Game visuals">
 						<figure className="media primary">
 							<div className="imgPlaceholder">
-								<span>HERO PHOTO (in action)</span>
+								<img src="../src/assets/9370.png" alt="image of game in action"/>
 							</div>
-							<figcaption>Live diplomacy + logistics in the same 5-minute intervals.</figcaption>
+							<figcaption>Live diplomacy + logistics. This game is so cool.</figcaption>
 						</figure>
 
 						<div className="mediaStack">
 							<figure className="media">
 								<div className="imgPlaceholder">
-									<span>BOARD CLOSE-UP</span>
+									<img src="../src/assets/board2.png" alt="Board closeup"/>
 								</div>
 							</figure>
 							<figure className="media">
 								<div className="imgPlaceholder">
-									<span>FOUNDER / FACILITATION</span>
+									<img src="../src/assets/jude4c.jpeg" alt="image of game in action"/>
 								</div>
 							</figure>
 						</div>
@@ -126,7 +126,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<span>PHOTO: negotiation / teams</span>
+								<img src="../src/assets/jude6.jpeg" alt="image of game in action"/>
 							</div>
 						</figure>
 					</div>
@@ -147,7 +147,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<span>PHOTO: board / components</span>
+								<img src="../src/assets/board4.jpeg" alt="board on table"/>
 							</div>
 						</figure>
 					</div>
@@ -167,7 +167,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<span>PHOTO: debrief / classroom</span>
+								<img src="../src/assets/jude2.jpeg" alt="image of game in action"/>
 							</div>
 						</figure>
 					</div>
@@ -199,16 +199,17 @@ export default function TheGame(){
 
 					<div className="gallery" aria-label="Photo gallery">
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><span>ACTION PHOTO</span></div>
+							<div className="imgPlaceholder"><img src="../src/assets/board1.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><span>BOARD CLOSE-UP</span></div>
+							<div className="imgPlaceholder"><img src="../src/assets/9007.png" alt="image of game in action"/></div>
+							
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><span>SETUP / COMPONENTS</span></div>
+							<div className="imgPlaceholder"><img src="../src/assets/board5.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><span>FOUNDER PRESENTING</span></div>
+							<div className="imgPlaceholder"><img src="../src/assets/talk.jpg" alt="founder presenting"/></div>
 						</figure>
 					</div>
 				</div>

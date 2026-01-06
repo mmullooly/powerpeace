@@ -17,8 +17,13 @@
 }
 
 /* HERO */
-.contact__hero{
+.contact__heroWrap{
+	width: min(1100px, 100%);
 	margin: 18px auto 28px auto;
+	padding: 0 24px;
+}
+
+.contact__hero{
 	border-radius: 18px;
 	padding: 28px;
 	background: radial-gradient(900px 500px at 20% 10%, rgba(120,160,255,0.18), transparent 60%),
@@ -26,10 +31,6 @@
 		rgba(8,12,22,0.45);
 	border: 1px solid rgba(255,255,255,0.10);
 	backdrop-filter: blur(10px);
-}
-
-.contact__hero .contact__container{
-	padding: 0;
 }
 
 .contact__heroInner{
