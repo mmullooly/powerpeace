@@ -1,4 +1,4 @@
-/* Contact.css */
+/* contact.css */
 
 .contact{
 	width: 100%;
@@ -26,7 +26,8 @@
 .contact__hero{
 	border-radius: 18px;
 	padding: 28px;
-	background: radial-gradient(900px 500px at 20% 10%, rgba(120,160,255,0.18), transparent 60%),
+	background:
+		radial-gradient(900px 500px at 20% 10%, rgba(120,160,255,0.18), transparent 60%),
 		radial-gradient(900px 500px at 80% 30%, rgba(90,210,255,0.12), transparent 55%),
 		rgba(8,12,22,0.45);
 	border: 1px solid rgba(255,255,255,0.10);
@@ -103,9 +104,254 @@
 	border-radius: 10px;
 }
 
-/* GRID */
+/* TYPO */
+.contact__sectionTitle{
+	margin: 0;
+	font-size: 22px;
+	letter-spacing: -0.01em;
+}
+
+.contact__sectionText{
+	margin: 8px 0 0 0;
+	line-height: 1.55;
+	opacity: 0.88;
+	max-width: 78ch;
+}
+
+/* ACTION ROW */
+.contact__actionRow{
+	padding: 12px 0 28px 0;
+}
+
+.contact__actionGrid{
+	display: grid;
+	grid-template-columns: 1.89fr 1fr; /* ~65% / 35% */
+	gap: 16px;
+	align-items: start;
+}
+
+.contact__actionCard{
+	border-radius: 16px;
+	padding: 18px;
+	background: rgba(8,12,22,0.28);
+	border: 1px solid rgba(255,255,255,0.10);
+	backdrop-filter: blur(10px);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Calendar */
+.contact__embedCard{
+	border-radius: 16px;
+	padding: 16px;
+	background: rgba(8,12,22,0.30);
+	border: 1px solid rgba(255,255,255,0.10);
+	backdrop-filter: blur(10px);
+	margin-top: 14px;
+}
+
+.contact__embedCard--wide{
+	padding: 14px;
+}
+
+.contact__iframeWrap{
+	width: 100%;
+	height: 500px;
+	border-radius: 14px;
+	overflow: hidden;
+	border: 1px solid rgba(255,255,255,0.10);
+	background: rgb(254, 254, 254);
+}
+
+.contact__iframeWrap--tall{
+	height: 550px;
+	border-radius: 12px;
+}
+
+.contact__iframe{
+	width: 100%;
+	height: 500px;
+	border: 0;
+	display: block;
+}
+
+.contact__iframe--tall{
+	height: 550px;
+}
+
+/* Email card */
+.contact__contactCard{
+	margin-top: 14px;
+	padding: 16px;
+	border-radius: 18px;
+	border: 1px solid rgba(255,255,255,0.12);
+	background:
+		radial-gradient(600px 240px at 15% 0%, rgba(120,160,255,0.14), transparent 55%),
+		rgba(0,0,0,0.18);
+	backdrop-filter: blur(10px);
+	display: grid;
+	gap: 14px;
+}
+
+.contact__contactCardTop{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 14px;
+	flex-wrap: wrap;
+}
+
+.contact__contactCardHead{
+	display: grid;
+	gap: 6px;
+	min-width: 220px;
+}
+
+.contact__emailLabel{
+	margin: 0;
+	opacity: 0.8;
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.contact__emailLink{
+	display: inline-block;
+	font-size: clamp(1.05rem, 2.0vw, 1.35rem);
+	font-weight: 750;
+	text-decoration: none;
+	color: rgba(235,245,255,0.98);
+	line-height: 1.15;
+
+	max-width: 28ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.contact__emailLink:hover{
+	text-decoration: underline;
+}
+
+.contact__contactCardMeta{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.contact__contactCardActions{
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.contact__copyBtn{
+	cursor: pointer;
+}
+
+/* Small helper fill (Checklist + Mini FAQ) */
+.contact__helperCard{
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px solid rgba(255,255,255,0.10);
+	display: grid;
+	gap: 10px;
+}
+
+.contact__helperHead{
+	display: grid;
+	gap: 6px;
+}
+
+.contact__helperTitle{
+	margin: 0;
+	font-size: 15px;
+	letter-spacing: -0.01em;
+}
+
+.contact__helperText{
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5;
+	opacity: 0.85;
+}
+
+.contact__checklist{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 8px;
+}
+
+.contact__checklist li{
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	line-height: 1.45;
+	font-size: 13px;
+	opacity: 0.92;
+}
+
+.contact__checkDot{
+	width: 10px;
+	height: 10px;
+	margin-top: 4px;
+	border-radius: 999px;
+	border: 1px solid rgba(255,255,255,0.16);
+	background: rgba(120,160,255,0.16);
+	flex: 0 0 auto;
+}
+
+.contact__miniFaq{
+	display: grid;
+	gap: 10px;
+}
+
+.contact__qa{
+	padding: 10px 12px;
+	border-radius: 14px;
+	border: 1px solid rgba(255,255,255,0.08);
+	background: rgba(255,255,255,0.03);
+}
+
+.contact__q{
+	margin: 0 0 6px 0;
+	font-size: 13px;
+	font-weight: 750;
+	letter-spacing: -0.01em;
+}
+
+.contact__a{
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5;
+	opacity: 0.88;
+}
+
+.contact__actionCard--email .contact__signature{
+	margin-top: auto;
+}
+
+/* Signature */
+.contact__signature{
+	margin-top: 14px;
+	padding-top: 12px;
+	border-top: 1px solid rgba(255,255,255,0.10);
+	opacity: 0.9;
+}
+
+.contact__sigLine{
+	margin: 0;
+	line-height: 1.45;
+	font-size: 13px;
+}
+
+/* Educator/Investor grid */
 .contact__gridSection{
-	margin-bottom: 26px;
+	margin-top: 26px;
 }
 
 .contact__grid{
@@ -166,164 +412,31 @@
 	color: rgba(200,220,255,0.75);
 }
 
-/* DETAILS */
-.contact__details{
-	padding: clamp(32px, 5vw, 64px) 0;
-}
-
-.contact__sectionTitle{
-	margin: 0;
-	font-size: 22px;
-	letter-spacing: -0.01em;
-}
-
-.contact__sectionText{
-	margin: 8px 0 0 0;
-	line-height: 1.55;
-	opacity: 0.88;
-	max-width: 78ch;
-}
-
-/* New professional contact card */
-.contact__contactCard{
-	margin-top: 16px;
-	padding: 18px;
-	border-radius: 18px;
-	border: 1px solid rgba(255,255,255,0.12);
-	background:
-		radial-gradient(600px 240px at 15% 0%, rgba(120,160,255,0.14), transparent 55%),
-		rgba(0,0,0,0.18);
-	backdrop-filter: blur(10px);
-	display: grid;
-	gap: 14px;
-}
-
-.contact__contactCardTop{
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-	gap: 14px;
-	flex-wrap: wrap;
-}
-
-.contact__contactCardHead{
-	display: grid;
-	gap: 6px;
-	min-width: 240px;
-}
-
-.contact__emailLabel{
-	margin: 0;
-	opacity: 0.8;
-	font-size: 0.85rem;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-}
-
-.contact__emailLink{
-	display: inline-block;
-	font-size: clamp(1.15rem, 2.2vw, 1.55rem);
-	font-weight: 750;
-	text-decoration: none;
-	color: rgba(235,245,255,0.98);
-	line-height: 1.15;
-}
-
-.contact__emailLink:hover{
-	text-decoration: underline;
-}
-
-.contact__contactCardMeta{
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.contact__pill{
-	display: inline-flex;
-	align-items: center;
-	padding: 8px 10px;
-	border-radius: 999px;
-	border: 1px solid rgba(255,255,255,0.12);
-	background: rgba(255,255,255,0.06);
-	font-size: 0.9rem;
-	opacity: 0.92;
-	white-space: nowrap;
-}
-
-.contact__contactCardActions{
-	display: flex;
-	gap: 10px;
-	flex-wrap: wrap;
-}
-
-.contact__copyBtn{
-	cursor: pointer;
-}
-
-/* BOOKING */
-.contact__booking{
-	margin: 0 auto;
-	padding: 18px 0;
-}
-
-.contact__bookingHeader{
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	margin-bottom: 14px;
-}
-
-.contact__embedCard{
-	border-radius: 16px;
-	padding: 16px;
-	background: rgba(8,12,22,0.30);
-	border: 1px solid rgba(255,255,255,0.10);
-	backdrop-filter: blur(10px);
-}
-
-.contact__iframeWrap{
-	width: 100%;
-	height: 500px;
-	border-radius: 14px;
-	overflow: hidden;
-	border: 1px solid rgba(255,255,255,0.10);
-	background: rgba(249, 253, 254, 0.817);
-}
-
-.contact__iframe{
-	width: 100%;
-	height: 500px;
-	border: 0;
-	display: block;
-}
-
-.contact__signature{
-	margin-top: 16px;
-	padding-top: 14px;
-	border-top: 1px solid rgba(255,255,255,0.10);
-	opacity: 0.9;
-}
-
-.contact__sigLine{
-	margin: 0;
-	line-height: 1.45;
-	font-size: 13px;
-}
-
 /* Responsive */
 @media (max-width: 920px){
 	.contact__grid{
 		grid-template-columns: 1fr;
 	}
 
-	.contact__iframe{
-		height: 680px;
+	.contact__actionGrid{
+		grid-template-columns: 1fr;
+	}
+
+	.contact__actionCard--calendar::after{
+		display: none;
+	}
+
+	.contact__emailLink{
+		max-width: 100%;
 	}
 }
 
 @media (max-width: 640px){
 	.contact__container{
+		padding: 0 16px;
+	}
+
+	.contact__heroWrap{
 		padding: 0 16px;
 	}
 }

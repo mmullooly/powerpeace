@@ -1,9 +1,12 @@
+// Contact.jsx
 import "../styles/contact.css";
 
 export default function Contact(){
+	const emailAddress = "james@powerpeace.org";
+
 	const handleCopyEmail = async () => {
 		try{
-			await navigator.clipboard.writeText("james@powerpeace.org");
+			await navigator.clipboard.writeText(emailAddress);
 		}catch(err){
 			// Silent fail (clipboard can be blocked). The mailto still works.
 			console.error(err);
@@ -24,14 +27,123 @@ export default function Contact(){
 							<a className="contact__btn contact__btn--primary" href="#book">
 								Book a Call
 							</a>
-							<a className="contact__btn contact__btn--ghost" href="mailto:james@powerpeace.org?subject=Power%20%26%20Peace%20Inquiry">
+							<a
+								className="contact__btn contact__btn--ghost"
+								href={`mailto:${emailAddress}?subject=Power%20%26%20Peace%20Inquiry`}
+							>
 								Email Us
 							</a>
 						</div>
 					</div>
-					</div>
-				</header>
+				</div>
+			</header>
 
+			{/* Calendar + Email */}
+			<section id="book" className="contact__actionRow">
+				<div className="contact__container">
+					<div className="contact__actionGrid">
+						{/* LEFT: Calendar */}
+						<div className="contact__actionCard contact__actionCard--calendar">
+							<h2 className="contact__sectionTitle">Book a time to talk</h2>
+							<p className="contact__sectionText">
+								Book a quick call that works with your schedule.
+							</p>
+
+							<div className="contact__embedCard contact__embedCard--wide">
+								<div className="contact__iframeWrap contact__iframeWrap--tall">
+									<iframe
+										title="Power & Peace Booking Calendar"
+										className="contact__iframe contact__iframe--tall"
+										src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3XU7o1gOdWU6e8Aot82EwR2feTSBLyYpQu74YYang9OzaVXUqcnZuLf_NXiv7SLk3fvLWVzrHb?gv=true"
+									/>
+								</div>
+							</div>
+						</div>
+
+						{/* RIGHT: Email */}
+						<div className="contact__actionCard contact__actionCard--email">
+							<h2 className="contact__sectionTitle">Prefer email?</h2>
+							<p className="contact__sectionText">
+								Send us a note and we’ll reply with the most useful next step.
+							</p>
+
+							<div className="contact__contactCard contact__contactCard--compact">
+								<div className="contact__contactCardTop">
+									<div className="contact__contactCardHead">
+										<p className="contact__emailLabel">Email</p>
+										<a
+											className="contact__emailLink"
+											href={`mailto:${emailAddress}?subject=Power%20%26%20Peace%20Inquiry`}
+										>
+											{emailAddress}
+										</a>
+									</div>
+
+									<div className="contact__contactCardMeta">
+										<span className="contact__pill">Replies in 1-2 business days</span>
+									</div>
+								</div>
+
+								<div className="contact__contactCardActions">
+									<a
+										className="contact__btn contact__btn--primary contact__btn--small"
+										href={`mailto:${emailAddress}?subject=Power%20%26%20Peace%20Inquiry`}
+									>
+										Compose Email
+									</a>
+									<button
+										type="button"
+										className="contact__btn contact__btn--ghost contact__btn--small contact__copyBtn"
+										onClick={handleCopyEmail}
+									>
+										Copy address
+									</button>
+								</div>
+							</div>
+
+							{/* Small fill: Checklist + Mini FAQ */}
+							<div className="contact__helperCard">
+								<div className="contact__helperHead">
+									<h3 className="contact__helperTitle">Fastest way to get help</h3>
+									<p className="contact__helperText">
+										A couple details let us respond with a clear next step.
+									</p>
+								</div>
+
+								<ul className="contact__checklist">
+									<li>
+										<span className="contact__checkDot" aria-hidden="true" />
+										<span><strong>You are:</strong> educator / investor / partner / other</span>
+									</li>
+									<li>
+										<span className="contact__checkDot" aria-hidden="true" />
+										<span><strong>Goal:</strong> classroom use, pilot, partnership, or overview</span>
+									</li>
+									<li>
+										<span className="contact__checkDot" aria-hidden="true" />
+										<span><strong>Timeline:</strong> “this semester”, “just exploring”</span>
+									</li>
+								</ul>
+
+								<div className="contact__miniFaq">
+									<div className="contact__qa">
+										<p className="contact__q">What happens next?</p>
+										<p className="contact__a">We reply with the right resource (or 2–3 questions) and a recommended next step.</p>
+									</div>
+								</div>
+							</div>
+
+							<div className="contact__signature contact__signature--compact">
+								<p className="contact__sigLine"><strong>James T. Mullooly</strong></p>
+								<p className="contact__sigLine">Founder, Power &amp; Peace</p>
+								<p className="contact__sigLine">Playbright LLC</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Educators / Investors */}
 			<section className="contact__gridSection">
 				<div className="contact__container">
 					<div className="contact__grid">
@@ -49,7 +161,12 @@ export default function Contact(){
 
 							<div className="contact__cardActions">
 								<a className="contact__link" href="#book">Book an educator walkthrough →</a>
-								<a className="contact__link" href="mailto:james@powerpeace.org?subject=Educator%20Inquiry%20-%20Power%20%26%20Peace">Email educator questions →</a>
+								<a
+									className="contact__link"
+									href={`mailto:${emailAddress}?subject=Educator%20Inquiry%20-%20Power%20%26%20Peace`}
+								>
+									Email educator questions →
+								</a>
 							</div>
 						</article>
 
@@ -68,79 +185,14 @@ export default function Contact(){
 
 							<div className="contact__cardActions">
 								<a className="contact__link" href="#book">Book an investor/partner call →</a>
-								<a className="contact__link" href="mailto:james@powerpeace.org?subject=Investor%20/%20Partner%20Inquiry%20-%20Power%20%26%20Peace">Email investor questions →</a>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section className="contact__details">
-				<div className="contact__container">
-					<h2 className="contact__sectionTitle">Prefer email?</h2>
-					<p className="contact__sectionText">
-						Send us a note and we’ll reply with the most useful next step.
-					</p>
-
-					<div className="contact__contactCard">
-						<div className="contact__contactCardTop">
-							<div className="contact__contactCardHead">
-								<p className="contact__emailLabel">Email</p>
 								<a
-									className="contact__emailLink"
-									href="mailto:james@powerpeace.org?subject=Power%20%26%20Peace%20Inquiry"
+									className="contact__link"
+									href={`mailto:${emailAddress}?subject=Investor%20/%20Partner%20Inquiry%20-%20Power%20%26%20Peace`}
 								>
-									james@powerpeace.org
+									Email investor questions →
 								</a>
 							</div>
-
-							<div className="contact__contactCardMeta">
-								<span className="contact__pill">Replies in 1-2 business days</span>
-							</div>
-						</div>
-
-						<div className="contact__contactCardActions">
-							<a
-								className="contact__btn contact__btn--primary contact__btn--small"
-								href="mailto:james@powerpeace.org?subject=Power%20%26%20Peace%20Inquiry"
-							>
-								Compose Email
-							</a>
-							<button
-								type="button"
-								className="contact__btn contact__btn--ghost contact__btn--small contact__copyBtn"
-								onClick={handleCopyEmail}
-							>
-								Copy address
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="book" className="contact__booking">
-				<div className="contact__container">
-					<div className="contact__bookingHeader">
-						<h2 className="contact__sectionTitle">Book a time to talk</h2>
-						<p className="contact__sectionText">
-							Book a quick call that works with your schedule.
-						</p>
-					</div>
-
-					<div className="contact__embedCard">
-						<div className="contact__iframeWrap">
-							<iframe
-								title="Power & Peace Booking Calendar"
-								className="contact__iframe"
-								src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3XU7o1gOdWU6e8Aot82EwR2feTSBLyYpQu74YYang9OzaVXUqcnZuLf_NXiv7SLk3fvLWVzrHb?gv=true"
-							/>
-						</div>
-					</div>
-
-					<div className="contact__signature">
-						<p className="contact__sigLine"><strong>James T. Mullooly</strong></p>
-						<p className="contact__sigLine">Founder, Power &amp; Peace</p>
-						<p className="contact__sigLine">Playbright LLC</p>
+						</article>
 					</div>
 				</div>
 			</section>

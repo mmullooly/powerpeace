@@ -510,3 +510,72 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+/* Advisory names: make the existing text feel intentional */
+.about__advisorList{
+	margin-top: 12px;
+	display: grid;
+	gap: 10px;
+}
+
+.about__advisorLine{
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	padding: 12px 12px;
+	border-radius: 14px;
+	border: 1px solid rgba(255,255,255,0.12);
+	background: rgba(0,0,0,0.18);
+}
+
+.about__advisorChip{
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 22px;
+	padding: 0 10px;
+	border-radius: 999px;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.75);
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.06);
+}
+
+.about__advisorText{
+	margin: 0;
+	color: rgba(255,255,255,0.90);
+	line-height: 1.45;
+}
+
+.about__advisorText strong{
+	color: rgba(255,255,255,0.98);
+}
+
+/* “and” separator that looks designed */
+.about__advisorLine--and{
+	padding: 0;
+	border: none;
+	background: transparent;
+	justify-content: center;
+}
+
+.about__advisorAnd{
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: rgba(255,255,255,0.55);
+	font-size: 12px;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+}
+
+.about__advisorAnd::before,
+.about__advisorAnd::after{
+	content: "";
+	height: 1px;
+	width: 40%;
+	background: rgba(255,255,255,0.10);
+}

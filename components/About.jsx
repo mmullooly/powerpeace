@@ -183,15 +183,27 @@ export default function About(){
 				<h3 className="about__orgTitle">Experts guiding the build</h3>
 				<p className="about__p">
 					Our five member Advisory Board supports Playbright with national experts in education, curriculum assessment, commercialization, and game design.
-                    Including: </p>
-                    <p></p>
-                    <p><strong>John Hunter,</strong>  creator of World Peace Game</p> 
-                    <p>and</p>
-                    <p><strong>Ben Lawless,</strong>  geopolitical education game designer</p>
-				
-			</div>
-		</div>
-	</div>
+				</p>
+                <div className="about__advisorList" role="list">
+					<div className="about__advisorLine" role="listitem">
+						<p className="about__advisorText">
+							<strong>John Hunter,</strong> creator of World Peace Game
+						</p>
+				</div>
+
+				<div className="about__advisorLine about__advisorLine--and" aria-hidden="true">
+					<span className="about__advisorAnd">and</span>
+				</div>
+
+				<div className="about__advisorLine" role="listitem">
+					<p className="about__advisorText">
+						<strong>Ben Lawless,</strong> geopolitical education game designer
+					</p>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
 </section>
 
 			{/* CLOSE: calm CTA */}
