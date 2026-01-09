@@ -14,8 +14,8 @@ export default function TheGame(){
 					</p>
 
 					<div className="ctaRow">
-						<a className="btn primary" href="/contact">Request info</a>
-						<a className="btn secondary" href="/playtests">See playtests</a>
+						<a className="btn primary" href="/contact">Schedule a playtest</a>
+						<a className="btn secondary" href="/playtests">Past playtests</a>
 					</div>
 
 					<div className="heroMedia" aria-label="Game visuals">
@@ -114,13 +114,13 @@ export default function TheGame(){
 						<div className="featureText">
 							<h3>What “turnless” really means</h3>
 							<p>
-								Power &amp; Peace is designed so <strong> everyone is always in motion</strong>. The planets rotate continuously, and every 5 minute interval updates the simulation conditions.
-								Players stay engaged by doing what leaders do: communicating, adapting, and critical thinking in real time.
+								Power &amp; Peace is designed so <strong> everyone is always in control</strong>. Unlike the traditional model of turn-based geopolitical games, our innovative game mechanics facilitate simultaenous action from any and all players at once.
+								Players stay engaged doing what leaders do: taking action, communicating, adapting, and critical thinking in real time.
 							</p>
 
 							<div className="callout">
-								<p><strong>No turns</strong> → no bottlenecks.</p>
-								<p><strong>No dice</strong> → no random chance. Outcomes come from your decisions, coordination, and constraints.</p>
+								<p><strong>No turns</strong> → No down-time or waiting to do something again. Players can act at any time.</p>
+								<p><strong>No dice</strong> → No random chance or "gamification". Outcomes come from decisions, coordination, and constraints.</p>
 							</div>
 						</div>
 

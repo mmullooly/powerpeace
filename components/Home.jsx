@@ -30,7 +30,7 @@ export default function Home(){
 						<article className="homeCard">
 							<h3 className="homeCardTitle">Playtests</h3>
 							<p className="homeCardText">
-								We’re running early playtests with schools and groups. Read reviews from previous players.
+								We’re currently running playtests with schools and groups. Read reviews from previous players and educators.
 							</p>
 							<div className="homeCardCta">
 								<Link className="btn primary" to="/playtests">See More</Link>
@@ -40,7 +40,7 @@ export default function Home(){
 						<article className="homeCard">
 							<h3 className="homeCardTitle">About Us</h3>
 							<p className="homeCardText">
-								Get to know the creators, our mission, and what we’re building next.
+								Get to know the creators, our mission, and the project background.
 							</p>
 							<div className="homeCardCta">
 								<Link className="btn primary" to="/aboutUs">Read More</Link>
