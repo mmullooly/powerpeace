@@ -7,14 +7,14 @@ export default function TheGame(){
 				<div className="heroInner">
 					<h1>Power &amp; Peace</h1>
 					<h2 className="eye">Turnless • Diceless • Cardless • Simultaneous </h2>
-					<h2>Geopolitics played live.</h2>
+					<h2>Geopolitics played in real-time</h2>
 
 					<p className="lede">
-						Players lead up to <strong>26 nations</strong> across <strong>four rotating planets</strong>, building prosperity while managing the supply chain of <strong>12 vital resources</strong>—all under constant negotiation and a barrage of crises.
+						Players lead up to <strong>26 Nations</strong> across <strong>four rotating planets</strong>, increasing their own prosperity while managing supply chains of <strong>15 vital resources</strong> — all amidst a barrage of world crises.
 					</p>
 
 					<div className="ctaRow">
-						<a className="btn primary" href="/contact">Request a demo</a>
+						<a className="btn primary" href="/contact">Request info</a>
 						<a className="btn secondary" href="/playtests">See playtests</a>
 					</div>
 
@@ -23,7 +23,7 @@ export default function TheGame(){
 							<div className="imgPlaceholder">
 								<img src="../src/assets/9370.png" alt="image of game in action"/>
 							</div>
-							<figcaption>Live diplomacy + logistics. This game is so cool.</figcaption>
+							<figcaption>A real-time simulation game where simultaneously collaborative and competitive diplomacy is the core gameplay element.</figcaption>
 						</figure>
 
 						<div className="mediaStack">
@@ -54,7 +54,7 @@ export default function TheGame(){
 							<p className="statLabel">rotating planets</p>
 						</div>
 						<div className="stat">
-							<p className="statNum">12</p>
+							<p className="statNum">15</p>
 							<p className="statLabel">vital resources</p>
 						</div>
 						<div className="stat">
@@ -69,39 +69,39 @@ export default function TheGame(){
 				<div className="wrap">
 					<h3 id="quickstart">How Power &amp; Peace works:</h3>
 					<p className="micro">
-						A live geopolitical ecosystem where diplomacy, logistics, and crisis-response happen simultaneously.
+						A live geopolitical ecosystem where diplomacy, logistics, negotiation, and crisis-response happen simultaneously.
 					</p>
 
 					<div className="grid two">
 						<div className="card">
-							<h4>1) You run a nation</h4>
+							<h4>1) Managing a country</h4>
 							<p>
-								Each team represents a nation (A–Z) with its own needs, strengths, and constraints.
-								Your goal is to increase prosperity without collapsing your resource pipeline.
+								Each team inherits a unique Nation (A–Z) with its own needs, strengths, and constraints.
+								The goal is to increase prosperity without collapsing your economy, all while resolving your international conflicts.
 							</p>
 						</div>
 
 						<div className="card">
 							<h4>2) Resources drive everything</h4>
 							<p>
-								Food. Iron. Oil. And more. The economy is a living supply chain: trade routes,
-								shortages, and partnerships create both leverage and vulnerability.
+								Just like real life, the economy is a living supply chain. Different trade routes,
+								shortages, and partnerships can create both strategic leverage and vulnerability.
 							</p>
 						</div>
 
 						<div className="card">
-							<h4>3) Time never stops</h4>
+							<h4>3) It's always everyones' turn</h4>
 							<p>
-								A <strong>5-minute interval clock</strong> acts like a universal “tick”, rotating the 4 planets.
-								If you wait, the world moves without you.
+								The <strong>interval clock</strong>, a <strong>5-minute</strong> timer, acts like a universal turn counter for every single piece on the board.
+								But if you wait, the world moves without you; the planet rotations dictate certain windows of opportunity.
 							</p>
 						</div>
 
 						<div className="card">
 							<h4>4) Diplomacy is the main mechanic</h4>
 							<p>
-								Negotiation is constant. Alliances, trade deals, conflict prevention, peacekeeping,
-								power plays. Conversations are the engine that changes outcomes.
+								Negotiation is constant, and players' conversation- and decision-making skills are under high pressure. Alliances, trade deals, conflict solving, and new crises
+								are always shifting the circumtances and occur all in real-time.
 							</p>
 						</div>
 					</div>
@@ -115,7 +115,7 @@ export default function TheGame(){
 							<h3>What “turnless” really means</h3>
 							<p>
 								Power &amp; Peace is designed so <strong> everyone is always in motion</strong>. The planets rotate continuously, and every 5 minute interval updates the simulation conditions.
-								Players stay engaged by doing what leaders do: communicating, adapting, and making tradeoffs in real time.
+								Players stay engaged by doing what leaders do: communicating, adapting, and critical thinking in real time.
 							</p>
 
 							<div className="callout">
