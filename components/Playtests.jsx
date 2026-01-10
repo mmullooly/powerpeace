@@ -15,21 +15,21 @@ export default function Playtests(){
 				<div className="playtestsHeroInner">
 					<h1 className="playtestsTitle">Playtests</h1>
 					<p className="playtestsLead">
-						A look at where we’ve tested, what players said, and what we learned.
+						A look at where we’ve tested, what users said, and what we've learned.
 					</p>
 
 					<div className="playtestsHeroStats">
 						<div className="playtestsStat">
-							<div className="playtestsStatNum">3+</div>
-							<div className="playtestsStatLabel">Campuses / groups</div>
+							<div className="playtestsStatNum">30+</div>
+							<div className="playtestsStatLabel">Total hours played</div>
 						</div>
 						<div className="playtestsStat">
-							<div className="playtestsStatNum">60+</div>
-							<div className="playtestsStatLabel">Players (placeholder)</div>
+							<div className="playtestsStatNum">70+</div>
+							<div className="playtestsStatLabel">Previous players</div>
 						</div>
 						<div className="playtestsStat">
-							<div className="playtestsStatNum">★ ★ ★ ★ ★</div>
-							<div className="playtestsStatLabel">Avg rating (placeholder)</div>
+							<div className="playtestsStatNum">9/10</div>
+							<div className="playtestsStatLabel">Average rating</div>
 						</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@ export default function Playtests(){
 					<div className="playtestsSectionHeader">
 						<h2 className="playtestsSectionTitle">Past Playtests</h2>
 						<p className="playtestsSectionSub">
-							Do we want a subtitle here?
+							Playbright has run in-classroom beta tests of Power & Peace at middle schools, high schools, and colleges.
 						</p>
 					</div>
 
@@ -51,9 +51,9 @@ export default function Playtests(){
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Goucher College</h3>
-								<p className="playtestsCardMeta">2024 • Playtest Session</p>
+								<p className="playtestsCardMeta">2024 • Baltimore, MD</p>
 								<p className="playtestsCardText">
-									Short highlight placeholder: what went well, what surprised you, one specific moment.
+									The game began development as James Mullooly's senior capstone project and was first played in May 2024.
 								</p>
 							</div>
 						</article>
@@ -63,8 +63,8 @@ export default function Playtests(){
                                 <img src="../src/assets/9007.png" alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
-								<h3 className="playtestsCardTitle">Pres of M…. MN</h3>
-								<p className="playtestsCardMeta">2024 • Playtest Session</p>
+								<h3 className="playtestsCardTitle">Presentation of Mary</h3>
+								<p className="playtestsCardMeta">2025 • St. Paul, MN</p>
 								<p className="playtestsCardText">
 									Short highlight placeholder: a quote, a stat, or a single “this proved the concept” takeaway.
 								</p>
@@ -77,7 +77,7 @@ export default function Playtests(){
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">St. Jude</h3>
-								<p className="playtestsCardMeta">2025 • Playtest Session</p>
+								<p className="playtestsCardMeta">2025 • Milwaukee, WI</p>
 								<p className="playtestsCardText">
 									Short highlight placeholder: how the group engaged, what the pacing felt like, etc.
 								</p>
