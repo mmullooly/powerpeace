@@ -5,6 +5,14 @@ export default function Home(){
 	return(
 		<div className="home">
 			<section className="homeHero">
+				{/* Option A (recommended): put file in /public/images/hero.jpg */}
+				<img
+					className="homeHeroImg"
+					src="../src/assets/board1.jpeg"
+					alt=""
+					aria-hidden="true"
+				/>
+
 				<div className="homeWrap">
 					<div className="homeHeroInner">
 						<h1 className="homeTitle">Power &amp; Peace</h1>
@@ -16,7 +24,7 @@ export default function Home(){
 						</p>
 
 						<div className="homeHeroActions">
-							<Link className="btn primary" to="/theGame">
+							<Link className="btnHome primary" to="/theGame">
 								Learn more
 							</Link>
 						</div>
@@ -33,7 +41,7 @@ export default function Home(){
 								We’re currently running playtests with schools and groups. Read reviews from previous players and educators.
 							</p>
 							<div className="homeCardCta">
-								<Link className="btn primary" to="/playtests">See More</Link>
+								<Link className="btnHome secondary" to="/playtests">See More</Link>
 							</div>
 						</article>
 
@@ -43,7 +51,7 @@ export default function Home(){
 								Get to know the creators, our mission, and the project background.
 							</p>
 							<div className="homeCardCta">
-								<Link className="btn primary" to="/aboutUs">Read More</Link>
+								<Link className="btnHome secondary" to="/aboutUs">Read More</Link>
 							</div>
 						</article>
 
@@ -53,7 +61,7 @@ export default function Home(){
 								Educators, investors, and partners — reach out. We’d love to talk.
 							</p>
 							<div className="homeCardCta">
-								<Link className="btn primary" to="/contact">Contact</Link>
+								<Link className="btnHome secondary" to="/contact">Contact</Link>
 							</div>
 						</article>
 					</div>

@@ -175,6 +175,15 @@ export default function About(){
 					<li>UX and visual design</li>
 					<li>Education alignment and usability</li>
 				</ul>
+				<div className="about__mission">
+					<p className="about__missionTitle">Our mission</p>
+					<p className="about__missionText">
+						The educational landscape is changing—learners are navigating complex systems, competing narratives,
+						and real-world consequences earlier than ever before. Playbright designs interactive,
+						story-driven learning experiences that meet this moment, using play and systems thinking
+						to cultivate agency, critical reasoning, and meaningful engagement in today’s classrooms.
+					</p>
+				</div>
 			</div>
 
 			{/* Advisory Board */}

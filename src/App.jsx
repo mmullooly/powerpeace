@@ -15,7 +15,7 @@ function App() {
     <ScrollToTop />
       <div className="app">
         <Navbar></Navbar>
-        <main className="container page">
+        <main className="page">
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="theGame" element={<TheGame/>}/>

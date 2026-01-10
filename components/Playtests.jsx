@@ -185,7 +185,7 @@ export default function Playtests(){
 						<p>Tell us your group size and setting. We’ll recommend a session format and next steps.</p>
 
 						<div className="ctaRowplaytest">
-							<a className="btn primary" href="/contact">Request Information</a>
+							<a className="btnPlay primary" href="/contact">Request Information</a>
 						</div>
 					</div>
 				</div>

@@ -90,7 +90,7 @@ export default function TheGame(){
 						</div>
 
 						<div className="card">
-							<h4>3) It's always everyones' turn</h4>
+							<h4>3) It's always everyone's turn</h4>
 							<p>
 								The <strong>interval clock</strong>, a <strong>5-minute</strong> timer, acts like a universal turn counter for every single piece on the board.
 								But if you wait, the world moves without you; the planet rotations dictate certain windows of opportunity.
@@ -101,7 +101,7 @@ export default function TheGame(){
 							<h4>4) Diplomacy is the main mechanic</h4>
 							<p>
 								Negotiation is constant, and players' conversation- and decision-making skills are under high pressure. Alliances, trade deals, conflict solving, and new crises
-								are always shifting the circumtances and occur all in real-time.
+								are always shifting the circumstances and occur all in real-time.
 							</p>
 						</div>
 					</div>
@@ -114,7 +114,7 @@ export default function TheGame(){
 						<div className="featureText">
 							<h3>What “turnless” really means</h3>
 							<p>
-								Power &amp; Peace is designed so <strong> everyone is always in control</strong>. Unlike the traditional model of turn-based geopolitical games, our innovative game mechanics facilitate simultaenous action from any and all players at once.
+								Power &amp; Peace is designed so <strong> everyone is always in control</strong>. Unlike the traditional model of turn-based geopolitical games, our innovative game mechanics facilitate simultaneous action from any and all players at once.
 								Players stay engaged doing what leaders do: taking action, communicating, adapting, and critical thinking in real time.
 							</p>
 
@@ -138,7 +138,7 @@ export default function TheGame(){
 							<ul className="bullets">
 								<li><strong>4 rotating planets</strong> (a changing geography that forces re-planning)</li>
 								<li><strong>26 nations</strong> (flexible for smaller groups)</li>
-								<li><strong>12 vital resources</strong> with real supply-chain consequences</li>
+								<li><strong>15 vital resources</strong> with real supply-chain consequences</li>
 								<li><strong>Natural + geopolitical crises</strong> that disrupt, reward preparation, and create moral dilemmas</li>
 								<li><strong>Movement / conflict system</strong> synchronized to the interval clock</li>
 								<li><strong>Facilitator-light</strong> flow (the system keeps moving; the room drives the story)</li>
@@ -171,7 +171,30 @@ export default function TheGame(){
 							</div>
 						</figure>
 					</div>
+
+					<div className="featureRow reverse">
+						<div className="featureText">
+							<h3>Educational Outcomes</h3>
+
+							<p>Here is a spot for a sentence or two if you want. Otherwise, this p tag can be deleted. </p>
+
+							<ul className="bullets">
+								<li><strong>Students get smart</strong> and smaller subtext</li>
+								<li><strong>You can copy&paste</strong> these if you want more bullets</li>
+								<li><strong>Another bullet</strong> that disrupt, reward preparation, and create moral dilemmas</li>
+								<li><strong>Students get smart</strong> and smaller subtext</li>
+							</ul>
+							<p>You could also add a sentence or two down here as well. Whatever works for you. But this one might get lost.</p>
+						</div>
+
+						<figure className="featureMedia">
+							<div className="imgPlaceholder">
+								<img src="../src/assets/9007.png" alt="board on table"/>
+							</div>
+						</figure>
 				</div>
+				</div>
+
 			</section>
 
 			<section className="section" aria-labelledby="whyfun">
