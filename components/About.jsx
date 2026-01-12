@@ -38,8 +38,8 @@ export default function About(){
 								<p className="about__factValue">10–100 players • 6–60 hours</p>
 							</div>
 							<div className="about__fact">
-								<p className="about__factLabel">Focus</p>
-								<p className="about__factValue">Economics • Diplomacy • Leadership • Negotiation</p>
+								<p className="about__factLabel">Skills</p>
+								<p className="about__factValue">Economics • Diplomacy • Leadership • Social</p>
 							</div>
 						</div>
 					</div>
@@ -64,7 +64,7 @@ export default function About(){
 					<header className="about__sectionHead">
 						<h2 className="about__h2">How it's built</h2>
 						<p className="about__sub">
-							Power & Peace is the result of ongoing development cycles with strict focus on improving the product for the best possible engagement patterns and educational outcomes.
+							Power & Peace is the result of ongoing development cycles with strict focus on improving the product for its best possible engagement patterns and educational outcomes.
 						</p>
 					</header>
 
@@ -73,8 +73,8 @@ export default function About(){
 							<p className="about__cardEyebrow">01</p>
 							<h3 className="about__h3">Systems first</h3>
 							<p className="about__p">
-								The core is a live ecosystem: decisions overlap, and outcomes emerge from interaction.
-								The goal is not reaching “correct answers,” but to practice systems-thinking and sound judgment in realistic situations
+								The core is a live ecosystem driven by supply and demand, logistics, and social mechanics.
+								The goal is not reaching “correct answers,” but to practice systems-thinking and sound judgment in realistic situations.
 							</p>
 						</div>
 
@@ -89,9 +89,10 @@ export default function About(){
 
 						<div className="about__card">
 							<p className="about__cardEyebrow">03</p>
-							<h3 className="about__h3">Packaged for adoption</h3>
+							<h3 className="about__h3">Developed for distribution</h3>
 							<p className="about__p">
-								We continue to explore scalable modalities to bring this to a wide audience. Game mechanics have always been designed for ease of adaptation into digital or hybrid mediums.
+								We continue to explore scalable modalities to bring this to a wide audience. 
+								Game mechanics have always been designed for ease of adaptation into digital and/or hybrid mediums.
 							</p>
 						</div>
 					</div>
@@ -128,8 +129,8 @@ export default function About(){
 					<div className="about__founderText">
 						<h2 className="about__h2">James Mullooly</h2>
 						<p className="about__p">
-							James built Playbright around a straightforward question: how can we use gaming to best serve our society? His academic and creative work spans leadership, diplomacy,
-							project management, immersive media, and child development, bringing the right mix of systems thinking and human-centered design to the product. As the creator of Power & Peace, he envisioned a better way for students to interact with the world’s toughest challenges — then built a team, company, and product to make that vision real.
+							James built Playbright around a straightforward question: how can we use gaming to best serve our society? As the creator of Power & Peace, he envisioned a better way for students to interact with the world’s toughest challenges — then built a team, company, and product to make that vision real.
+							Mullooly’s academic and creative background is uniquely suited to inventing an innovation of this scope. His coursework in leadership, diplomacy, arts entrepreneurship, immersive storytelling, war and peace studies, and child development reflects a rare synthesis of skills across international relations, media design, education, and game theory. Graduating Summa Cum Laude, his academic record supports his conceptual vision with intellectual rigor.
 						</p>
 
 						<div className="about__miniGrid">
@@ -195,7 +196,7 @@ export default function About(){
 					</div>
 					<div className="about__advisorLine" role="listitem">
 						<p className="about__advisorText">
-							<strong>John Hunter,</strong> creator of World Peace Game + Foundation
+							<strong>John Hunter,</strong> creator of the World Peace Game + Foundation
 						</p>
 					</div>
 				<div className="about__advisorLine" role="listitem">
