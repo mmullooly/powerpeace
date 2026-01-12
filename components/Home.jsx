@@ -19,7 +19,7 @@ export default function Home(){
 						<h2 className="homeSubtitle">World Simulation Game</h2>
 
 						<p className="homeLead">
-							Power and Peace is a live, turnless geopolitical simulation where players become world leaders —
+							Power and Peace is a turnless geopolitical simulation megagame where players become world leaders —
 							negotiating, managing resources, and responding to crises in real time.
 						</p>
 
