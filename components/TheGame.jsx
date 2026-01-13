@@ -76,8 +76,8 @@ export default function TheGame(){
 						<div className="card">
 							<h4>1) Managing a country</h4>
 							<p>
-								Each team inherits a unique Nation (A–Z) with its own needs, strengths, and constraints.
-								The goal is to increase prosperity without collapsing your economy, all while resolving your international conflicts.
+								Each team inherits a distinct Nation with its own needs, strengths, and constraints.
+								To win, a Nation must increase domestic prosperity while resolving all their crises and international conflicts by the end, making gameplay both collaborative and competitive.
 							</p>
 						</div>
 
@@ -85,7 +85,7 @@ export default function TheGame(){
 							<h4>2) Resources drive everything</h4>
 							<p>
 								Just like real life, the economy is a living supply chain. Different trade routes,
-								shortages, and partnerships can create both strategic leverage and vulnerability.
+								shortages, and partnerships can create both strategic leverage and vulnerability. Players experience the dynamics of supply and demand directly through their actions and decision making.
 							</p>
 						</div>
 
@@ -112,15 +112,15 @@ export default function TheGame(){
 				<div className="wrap">
 					<div className="featureRow">
 						<div className="featureText">
-							<h3>What “turnless” really means</h3>
+							<h3>Turnless Gameplay</h3>
 							<p>
-								Power &amp; Peace is designed so <strong> everyone is always in control</strong>. Unlike the traditional model of turn-based geopolitical games, our innovative game mechanics facilitate simultaneous action from any and all players at once.
+								Power &amp; Peace is uniquely designed so <strong>everyone is always in control</strong>. Unlike the traditional models for game mechanics in turn-based board games and geopolitical simulations, our innovative mechanics facilitate <strong>simultaneous action</strong> from any and all players at once.
 								Players stay engaged doing what leaders do: taking action, communicating, adapting, and critical thinking in real time.
 							</p>
 
 							<div className="callout">
-								<p><strong>No turns</strong> → No down-time or waiting to do something again. Players can act at any time.</p>
-								<p><strong>No dice</strong> → No random chance or "gamification". Outcomes come from decisions, coordination, and constraints.</p>
+								<p><strong>No turns</strong> → No down-time or waiting to do something again</p>
+								<p><strong>No dice</strong> → No random chance or "gamification"</p>
 							</div>
 						</div>
 
@@ -133,15 +133,15 @@ export default function TheGame(){
 
 					<div className="featureRow reverse">
 						<div className="featureText">
-							<h3>What’s on the table</h3>
+							<h3>The Game Board</h3>
 
 							<ul className="bullets">
-								<li><strong>4 rotating planets</strong> (a changing geography that forces re-planning)</li>
-								<li><strong>26 nations</strong> (flexible for smaller groups)</li>
-								<li><strong>15 vital resources</strong> with real supply-chain consequences</li>
-								<li><strong>Natural + geopolitical crises</strong> that disrupt, reward preparation, and create moral dilemmas</li>
-								<li><strong>Movement / conflict system</strong> synchronized to the interval clock</li>
-								<li><strong>Facilitator-light</strong> flow (the system keeps moving; the room drives the story)</li>
+								<li><strong>4 rotating planets</strong> with different terrains, climates, and natural resources</li>
+								<li><strong>26 unique nations</strong> from A—Z (modular for smaller groups)</li>
+								<li><strong>15 vital resources</strong> with coordinated supply chains and tangible importance</li>
+								<li><strong>Natural + geopolitical crises</strong> that disrupt, overwhelm, and require teamwork</li>
+								<li><strong>Movement system / piece mechanics</strong> synchronized to the interval clock</li>
+								<li><strong>Facilitator-light</strong> so that educators can give individualized attention</li>
 							</ul>
 						</div>
 
@@ -154,14 +154,14 @@ export default function TheGame(){
 
 					<div className="featureRow">
 						<div className="featureText">
-							<h3>What a session feels like</h3>
+							<h3>Stages of the Simulation</h3>
 
 							<ol className="steps">
-								<li><strong>Briefing:</strong> nations, objectives, and the world’s pressure points.</li>
-								<li><strong>Intervals begin:</strong> trade talks, alliances, and logistics start immediately.</li>
-								<li><strong>Crises hit:</strong> shortages, climate events, and geopolitical flashpoints force choices.</li>
-								<li><strong>Compounding outcomes:</strong> smart preparation pays; neglect becomes expensive.</li>
-								<li><strong>Debrief:</strong> students connect decisions to systems, incentives, and real-world parallels.</li>
+								<li><strong>Briefing:</strong> Introducing the Nations, Crises, and four planets,</li>
+								<li><strong>Intervals begin:</strong> trade talks, domestic agendas, and logistics emerge immediately.</li>
+								<li><strong>Mid-Game Crises hit:</strong> shortages, climate events, and selfish decisions create more conflicts.</li>
+								<li><strong>Compounding outcomes:</strong> smart preparation often pays; neglect grows costly.</li>
+								<li><strong>Debrief:</strong> students make connections between in-game actions/decision-making and real-world parallels, such as historical events, social systems, and political moves.</li>
 							</ol>
 						</div>
 
@@ -176,15 +176,15 @@ export default function TheGame(){
 						<div className="featureText">
 							<h3>Educational Outcomes</h3>
 
-							<p>Here is a spot for a sentence or two if you want. Otherwise, this p tag can be deleted. </p>
+							<p>At the core of the game and its exigency are several interdisciplinary skills which we believe current education standards fail to adequately develop. Power & Peace is designed to immerse 21st century students in:</p>
 
 							<ul className="bullets">
-								<li><strong>Students get smart</strong> and smaller subtext</li>
-								<li><strong>You can copy&paste</strong> these if you want more bullets</li>
-								<li><strong>Another bullet</strong> that disrupt, reward preparation, and create moral dilemmas</li>
-								<li><strong>Students get smart</strong> and smaller subtext</li>
+								<li><strong>Geopolitical Literacy</strong></li>
+								<li><strong>Budgeting and Resource Management</strong></li>
+								<li><strong>Macroeconomics</strong></li>
+								<li><strong>Negotiation, Diplomacy, and Compromise</strong></li>
+								<li><strong>Leadership and Teamwork</strong></li>
 							</ul>
-							<p>You could also add a sentence or two down here as well. Whatever works for you. But this one might get lost.</p>
 						</div>
 
 						<figure className="featureMedia">
@@ -199,7 +199,7 @@ export default function TheGame(){
 
 			<section className="section" aria-labelledby="whyfun">
 				<div className="wrap">
-					<h3 id="whyfun">Why it’s thought-provoking (and fun)</h3>
+					<h3 id="whyfun">Here's how it revolutionizes social studies</h3>
 					<p>
 						Power &amp; Peace turns big, abstract concepts into concrete decisions: scarcity, supply chains, incentives, trust, conflict, and cooperation.
 						Students don’t just learn <em>about</em> geopolitics — they <em>experience</em> the tension of making choices when there’s no perfect answer.
@@ -208,15 +208,15 @@ export default function TheGame(){
 					<div className="grid three">
 						<div className="card">
 							<h4>It rewards creativity</h4>
-							<p>Students invent deals, coalitions, and strategies that no script could predict.</p>
+							<p>Students invent their own deals, solutions, and strategies. Every session has completely unique outcomes.</p>
 						</div>
 						<div className="card">
 							<h4>It creates real stakes</h4>
-							<p>Every interval forces prioritization: protect people, stabilize resources, or gain leverage.</p>
+							<p>With tangible consequences, every interval forces prioritization: which resources and crises demand immediate attention?</p>
 						</div>
 						<div className="card">
 							<h4>It’s social by design</h4>
-							<p>Diplomacy is the core loop. Communication skills are not optional.</p>
+							<p>Like Model UN layered on top of trading and war-game frameworks, our socialized mechanics create dynamic turnless gameplay.</p>
 						</div>
 					</div>
 
