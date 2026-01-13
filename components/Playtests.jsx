@@ -126,40 +126,40 @@ export default function Playtests(){
 							<h2 className="playtestsPanelTitle">Player Reviews</h2>
 							<div className="playtestsQuote">
 								<p className="playtestsQuoteText">
-									“Placeholder quote that feels real. One sentence that captures the experience.”
+									“I learned how complicated the relationships between countries are. I understand more of how conflicts are created, and the value in working with others.”
 								</p>
-								<p className="playtestsQuoteMeta">— Student / Teacher / Player (placeholder)</p>
+								<p className="playtestsQuoteMeta">— Nation J players, St. Jude </p>
 							</div>
 							<div className="playtestsQuote">
 								<p className="playtestsQuoteText">
-									“Second placeholder quote. Keep it specific and not generic.”
+									“It was so fun being in that world. I loved seeing the planets, all the pieces, everything right in front of us so the crises and negotiating felt super real.”
 								</p>
-								<p className="playtestsQuoteMeta">— Role / Org (placeholder)</p>
+								<p className="playtestsQuoteMeta">— Lucy, Nation C player, Goucher College</p>
 							</div>
 						</div>
 
 						<div className="playtestsPanel">
 							<h2 className="playtestsPanelTitle">Ratings &amp; Data</h2>
 							<p className="playtestsPanelText">
-								Placeholder: quick metrics like engagement time, replay interest, clarity of objectives, etc.
+								Here we provide a brief highlight of our playtest feedback, but we encourage you to contact us for a full report of what users have to say about our product.
 							</p>
 
 							<div className="playtestsMiniGrid">
 								<div className="playtestsMiniStat">
-									<div className="playtestsMiniNum">96%</div>
-									<div className="playtestsMiniLabel">Would play again</div>
+									<div className="playtestsMiniNum">86</div>
+									<div className="playtestsMiniLabel">% of players who gained skills in 4+ learning objectives</div>
 								</div>
 								<div className="playtestsMiniStat">
-									<div className="playtestsMiniNum">4.8/5</div>
-									<div className="playtestsMiniLabel">Session rating</div>
+									<div className="playtestsMiniNum">9.2/10</div>
+									<div className="playtestsMiniLabel">Avg user rating</div>
 								</div>
 								<div className="playtestsMiniStat">
-									<div className="playtestsMiniNum">7 hrs</div>
+									<div className="playtestsMiniNum">8 hrs</div>
 									<div className="playtestsMiniLabel">Avg playtest length</div>
 								</div>
 								<div className="playtestsMiniStat">
-									<div className="playtestsMiniNum">8/10</div>
-									<div className="playtestsMiniLabel">Strategy depth?? idk</div>
+									<div className="playtestsMiniNum">24</div>
+									<div className="playtestsMiniLabel">Avg # of players</div>
 								</div>
 							</div>
 						</div>
