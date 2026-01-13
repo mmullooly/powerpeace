@@ -130,19 +130,9 @@ export default function About(){
 						<h2 className="about__h2">James Mullooly</h2>
 						<p className="about__p">
 							James built Playbright around a straightforward question: how can we use gaming to best serve our society? As the creator of Power & Peace, he envisioned a better way for students to interact with the world’s toughest challenges — then built a team, company, and product to make that vision real.
-							Mullooly’s academic and creative background is uniquely suited to inventing an innovation of this scope. His coursework in leadership, diplomacy, arts entrepreneurship, immersive storytelling, war and peace studies, and child development reflects a rare synthesis of skills across international relations, media design, education, and game theory. Graduating Summa Cum Laude, his academic record supports his conceptual vision with intellectual rigor.
-						</p>
 
-						<div className="about__miniGrid">
-							<div className="about__mini">
-								<p className="about__miniLabel">Design principle</p>
-								<p className="about__miniValue">Students learn by doing, negotiating, and adapting.</p>
-							</div>
-							<div className="about__mini">
-								<p className="about__miniLabel">What stays constant</p>
-								<p className="about__miniValue">Clarity, fairness, and meaningful consequences.</p>
-							</div>
-						</div>
+							Mullooly’s academic and creative background is uniquely suited to inventing an innovation of this scope. His academic work in leadership, diplomacy, public administration, arts entrepreneurship, immersive storytelling, war and peace studies, and child development reflects a rare synthesis of skills across international relations, media design, education, and game theory. Graduating Summa Cum Laude, his academic record supports his conceptual vision with intellectual rigor.
+						</p>
 					</div>
 				</div>
 			</section>
