@@ -113,11 +113,11 @@ export default function Contact(){
 								<ul className="contact__checklist">
 									<li>
 										<span className="contact__checkDot" aria-hidden="true" />
-										<span><strong>You are:</strong> educator / investor / partner / other</span>
+										<span><strong>You are:</strong> educator, investor, partner, other</span>
 									</li>
 									<li>
 										<span className="contact__checkDot" aria-hidden="true" />
-										<span><strong>Goal:</strong> classroom use, pilot, partnership, or overview</span>
+										<span><strong>Goal:</strong> classroom use, partnership, overview</span>
 									</li>
 									<li>
 										<span className="contact__checkDot" aria-hidden="true" />
@@ -150,13 +150,13 @@ export default function Contact(){
 						<article className="contact__card">
 							<h2 className="contact__cardTitle">For educators</h2>
 							<p className="contact__cardText">
-								Bring a serious, modern, discussion-driven game into your classroom with a format that fits your schedule.
+								Bring an engaging, modern, student-driven game into your classroom with a format that fits your schedule.
 							</p>
 
 							<ul className="contact__bullets">
 								<li>Classroom-ready implementation options</li>
-								<li>Guidance on facilitation and pacing</li>
-								<li>Help selecting the best modality for your students</li>
+								<li>All facilitation and materials provided</li>
+								<li>Help selecting the best format for your students</li>
 							</ul>
 
 							<div className="contact__cardActions">
@@ -178,9 +178,9 @@ export default function Contact(){
 							</p>
 
 							<ul className="contact__bullets">
-								<li>Clear market need: experiential + outcomes-driven learning</li>
-								<li>Distribution pathways: schools, programs, organizations</li>
-								<li>Partner opportunities across channels and regions</li>
+								<li>Demonstrable market demand for experiential learning, peace and policy games</li>
+								<li>$24 billion ed-games industry with projected 25% CAGR through 2033</li>
+								<li>Potential acquisition by major education publishers, game studios</li>
 							</ul>
 
 							<div className="contact__cardActions">

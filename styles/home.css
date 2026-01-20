@@ -2,6 +2,11 @@
 	width: 100%;
 }
 
+.page .home{
+	margin-top: -26px;
+}
+
+
 /* Shared container so hero + middle section align perfectly */
 .homeWrap{
 	width: min(1100px, 92vw);
@@ -14,30 +19,42 @@
 	min-height: 60vh;
 	display: flex;
 	align-items: center;
-	padding: 92px 0; /* no side padding here; container handles it */
+	padding: 60px 0;
 	overflow: hidden;
 }
 
-/* Full-width banner background */
+.homeHeroImg{
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* keeps it full-bleed without stretching */
+	object-position: center top;
+	z-index: 0;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+}
+
+/* Overlay stays on top of image */
 .homeHero::before{
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* Replace this with an actual image if you want later */
 	background:
-		linear-gradient(180deg, rgba(8,16,34,0.78) 0%, rgba(8,16,34,0.88) 65%, rgba(6,12,26,0.92) 100%),
+		linear-gradient(180deg, rgba(8,16,34,0.78) 0%, rgba(8,16,34,0.50) 65%, rgba(6,12,26,0.92) 100%),
 		radial-gradient(900px 600px at 20% 10%, rgba(80,150,255,0.20), transparent 55%),
 		radial-gradient(700px 500px at 80% 35%, rgba(120,255,200,0.14), transparent 55%),
 		radial-gradient(900px 700px at 50% 85%, rgba(255,140,200,0.12), transparent 60%);
-	z-index: 0;
+	z-index: 1;
 }
 
-/* Keep content above banner */
+/* Keep content above overlay */
 .homeHeroInner{
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	text-align: center;
-	padding: 0 20px; /* inner padding only, consistent with cards */
+	padding: 0 20px;
 }
 
 .homeTitle{
@@ -70,11 +87,11 @@
 
 /* CARDS */
 .homeCards{
-	padding: 56px 0 88px 0; /* container handles side padding */
+	padding: 56px 0 88px 0;
 }
 
 .homeCardsInner{
-	padding: 0 20px; /* matches hero inner padding */
+	padding: 0 20px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 22px;
@@ -84,8 +101,6 @@
 	border-radius: 16px;
 	padding: 28px 22px;
 	text-align: center;
-
-	/* This is the trick for aligned bottom buttons */
 	display: flex;
 	flex-direction: column;
 }
@@ -102,7 +117,6 @@
 	opacity: 0.9;
 }
 
-/* Push CTA to bottom so all 3 buttons align horizontally */
 .homeCardCta{
 	margin-top: auto;
 	padding-top: 22px;
@@ -110,7 +124,48 @@
 	justify-content: center;
 }
 
-/* Simple mobile stacking */
+.btnHome{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+	padding: 12px 18px;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 650;
+	letter-spacing: 0.01em;
+	border: 1px solid rgba(255,255,255,0.14);
+	background: rgba(255,255,255,0.06);
+	color: rgba(255,255,255,0.92);
+	box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+	transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.btnHome:hover{
+	transform: translateY(-1px);
+	background: rgba(255,255,255,0.10);
+	border-color: rgba(255,255,255,0.22);
+}
+
+.btnHome:focus-visible{
+	outline: 3px solid rgba(120,180,255,0.9);
+	outline-offset: 3px;
+}
+
+.btnHome.primary{
+	background: rgba(80,150,255,0.22);
+	border-color: rgba(120,180,255,0.38);
+}
+
+.btnHome.primary:hover{
+	background: rgba(80,150,255,0.28);
+	border-color: rgba(120,180,255,0.50);
+}
+
+.btnHome.secondary{
+	background: rgba(255,255,255,0.06);
+}
+
 @media (max-width: 900px){
 	.homeHero{
 		min-height: auto;
