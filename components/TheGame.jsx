@@ -23,7 +23,7 @@ export default function TheGame(){
 							<div className="imgPlaceholder">
 								<img src="../src/assets/9370.png" alt="image of game in action"/>
 							</div>
-							<figcaption>A real-time simulation game where simultaneously collaborative and competitive diplomacy is the core gameplay element.</figcaption>
+							<figcaption>A real-time world simulation game with simultaneously collaborative and competitive problem-solving.</figcaption>
 						</figure>
 
 						<div className="mediaStack">
