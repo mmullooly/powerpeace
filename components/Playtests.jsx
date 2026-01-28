@@ -47,7 +47,7 @@ export default function Playtests(){
 					<div className="playtestsGrid">
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="../src/assets/IMG_7786.jpg" alt="image of game in action"/>
+                                <img src="../src/assets/IMG_7701.jpg" alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Goucher College</h3>
@@ -110,11 +110,11 @@ export default function Playtests(){
 								<h3 className="playtestsCardTitle">About our Playtests</h3>
 								
 								<p className="playtestsCardText">
-									Power & Peace is in public beta-testing, offering in-person sessions for any interested organization, including (but not limited to) schools, universities, corporate groups, or conventions. The project is progressing through the product development stage by gaining user feedback and gauging our market. We currently offer playtesting across the midwestern US, touring the prototype physical version to improve the game and its educational outcomes. Our team has strong experience facilitating playtests, both online and in-classroom.
+									Power & Peace is in public beta-testing, offering in-person sessions for any interested organization, including (but not limited to) schools, universities, corporate groups, or conventions. The project is progressing through the product development stage by gaining user feedback and gauging our market. We currently offer playtesting across the midwestern US, touring the prototype physical version to improve the game and its educational outcomes.
 									
 									Playbright is steadily approaching the launch of our MVP (minimum viable product) for Power & Peace, which will introduce our own software components and digital interfaces (such as a live Data Tracking System) for fully seamless gameplay in hybrid modality. 
 
-									Below we provide a brief highlight of our playtest feedback, but we encourage you to contact us for a full report of what users have to say about testing our product.
+									Below we provide a brief highlight of our playtest feedback, but we encourage you to contact us for a full report of what users have to say after testing our product.
 								</p>
 							</div>
 						</article>
