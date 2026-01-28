@@ -4,9 +4,9 @@ import { useState } from "react";
 const images = [
 	"../src/assets/IMG_7784.jpg",
 	"../src/assets/IMG_7787.jpg",
-	"../src/assets/Screenshot 133012.png",
+	"../src/assets/Screenshot_133012.png",
 	"../src/assets/IMG_9002.jpg",
-	"../src/assets/Screenshot 131924.png"
+	"../src/assets/Screenshot_131924.png"
     ];
 
 export default function Playtests(){

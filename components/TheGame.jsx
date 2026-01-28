@@ -167,7 +167,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/Screenshot 141204.png" alt="image of game in action"/>
+								<img src="../src/assets/Screenshot_141204.png" alt="image of game in action"/>
 							</div>
 						</figure>
 					</div>
@@ -225,14 +225,14 @@ export default function TheGame(){
 							<div className="imgPlaceholder"><img src="../src/assets/board1.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/Screenshot 140814.png" alt="image of game in action"/></div>
+							<div className="imgPlaceholder"><img src="../src/assets/Screenshot_140814.png" alt="image of game in action"/></div>
 							
 						</figure>
 						<figure className="galleryItem">
 							<div className="imgPlaceholder"><img src="../src/assets/board5.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/Screenshot 140935.png" alt="playtest action"/></div>
+							<div className="imgPlaceholder"><img src="../src/assets/Screenshot_140935.png" alt="playtest action"/></div>
 						</figure>
 					</div>
 				</div>
