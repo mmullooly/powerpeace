@@ -3,7 +3,7 @@ import "../styles/about.css"
 export default function About(){
 
 	const gallery = [
-        { src: "../src/assets/starter.jpeg", alt: "Early prototype materials and layout" },
+        { src: "../src/assets/Screenshot 134135.png", alt: "Building the game in our old studio" },
         { src: "../src/assets/7482.png", alt: "Design demo prototype" },
 		{ src: "../src/assets/drawing.jpg", alt: "Early prototype materials and layout" },
         { src: "../src/assets/7409.png", alt: "Iteration notes and balance adjustments" },
