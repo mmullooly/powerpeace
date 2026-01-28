@@ -74,7 +74,7 @@ export default function About(){
 							<h3 className="about__h3">Systems first</h3>
 							<p className="about__p">
 								The core is a live ecosystem driven by supply and demand, logistics, and social mechanics.
-								The goal is not reaching “correct answers,” but to practice systems-thinking and sound judgment in realistic situations.
+								The goal is not reaching “correct answers,” but to practice systems-thinking and sound judgment in realistic problem-solving scenarios.
 							</p>
 						</div>
 
@@ -82,7 +82,7 @@ export default function About(){
 							<p className="about__cardEyebrow">02</p>
 							<h3 className="about__h3">Playtested reality</h3>
 							<p className="about__p">
-								Each iteration is driven by what real groups do: how they play, what they take away, what their educators say,
+								All development is driven by what real groups do: how they play, what they take away, what their educators say,
 								and what teachers need to run it smoothly.
 							</p>
 						</div>
@@ -92,7 +92,7 @@ export default function About(){
 							<h3 className="about__h3">Developed for distribution</h3>
 							<p className="about__p">
 								We continue to explore scalable modalities to bring this to a wide audience. 
-								Game mechanics have always been designed for ease of adaptation into digital and/or hybrid mediums.
+								From the start, game mechanics have been designed for ease of adaptation into digital and/or hybrid mediums.
 							</p>
 						</div>
 					</div>
@@ -211,7 +211,7 @@ export default function About(){
 				</div>
 				<div className="about__advisorLine" role="listitem">
 						<p className="about__advisorText">
-							<strong>Dr. Sonja Bozic,</strong> NYC, Serbian film director and new media professor
+							<strong>Dr. Sonja Bozic,</strong> NYC, Serbian director and new media developer
 						</p>
 				</div>
 			</div>
