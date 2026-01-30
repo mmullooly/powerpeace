@@ -326,3 +326,35 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+.blockSpacer{
+	display: block;
+	height: 1.25rem;
+}
+
+.playtestsQA{
+	margin-top: 1.5rem;
+}
+
+.qaBlock{
+	margin-bottom: 2rem;
+	padding-left: 1rem;
+	border-left: 2px solid rgba(255,255,255,0.15);
+}
+
+.qaQuestion{
+	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 0.5rem;
+}
+
+.qaAnswer{
+	color: rgba(255,255,255,0.85);
+	line-height: 1.6;
+}
+
+.qaAttribution{
+	font-weight: 700;
+	color: #ffffff;
+	margin-right: 0.25rem;
+}
