@@ -267,7 +267,7 @@
 }
 
 /* Buttons */
-.btn{
+.btnPlay{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -284,28 +284,28 @@
 	transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
-.btn:hover{
+.btnPlay:hover{
 	transform: translateY(-1px);
 	background: rgba(255,255,255,0.10);
 	border-color: rgba(255,255,255,0.22);
 }
 
-.btn:focus-visible{
+.btnPlay:focus-visible{
 	outline: 3px solid rgba(120,180,255,0.9);
 	outline-offset: 3px;
 }
 
-.btn.primary{
+.btnPlay.primary{
 	background: rgba(80,150,255,0.22);
 	border-color: rgba(120,180,255,0.38);
 }
 
-.btn.primary:hover{
+.btnPlay.primary:hover{
 	background: rgba(80,150,255,0.28);
 	border-color: rgba(120,180,255,0.50);
 }
 
-.btn.secondary{
+.btnPlay.secondary{
 	background: rgba(255,255,255,0.06);
 }
 
@@ -325,4 +325,36 @@
 	.playtestsTwoCol{
 		grid-template-columns: 1fr;
 	}
+}
+
+.blockSpacer{
+	display: block;
+	height: 1.25rem;
+}
+
+.playtestsQA{
+	margin-top: 1.5rem;
+}
+
+.qaBlock{
+	margin-bottom: 2rem;
+	padding-left: 1rem;
+	border-left: 2px solid rgba(255,255,255,0.15);
+}
+
+.qaQuestion{
+	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 0.5rem;
+}
+
+.qaAnswer{
+	color: rgba(255,255,255,0.85);
+	line-height: 1.6;
+}
+
+.qaAttribution{
+	font-weight: 700;
+	color: #ffffff;
+	margin-right: 0.25rem;
 }

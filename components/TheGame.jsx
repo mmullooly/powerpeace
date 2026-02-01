@@ -7,15 +7,15 @@ export default function TheGame(){
 				<div className="heroInner">
 					<h1>Power &amp; Peace</h1>
 					<h2 className="eye">Turnless • Diceless • Cardless • Simultaneous </h2>
-					<h2>Geopolitics played live.</h2>
+					<h2>Geopolitics played in real-time</h2>
 
 					<p className="lede">
-						Players lead up to <strong>26 nations</strong> across <strong>four rotating planets</strong>, building prosperity while managing the supply chain of <strong>12 vital resources</strong>—all under constant negotiation and a barrage of crises.
+						Players lead up to <strong>26 Nations</strong> across <strong>four rotating planets</strong>, increasing their own prosperity while managing supply chains of <strong>15 vital resources</strong> — all amidst a barrage of world crises.
 					</p>
 
 					<div className="ctaRow">
-						<a className="btn primary" href="/contact">Request a demo</a>
-						<a className="btn secondary" href="/playtests">See playtests</a>
+						<a className="btn primary" href="/contact">Schedule a playtest</a>
+						<a className="btn secondary" href="/playtests">Past playtests</a>
 					</div>
 
 					<div className="heroMedia" aria-label="Game visuals">
@@ -23,7 +23,7 @@ export default function TheGame(){
 							<div className="imgPlaceholder">
 								<img src="../src/assets/9370.png" alt="image of game in action"/>
 							</div>
-							<figcaption>Live diplomacy + logistics. This game is so cool.</figcaption>
+							<figcaption>A real-time simulation game where simultaneously collaborative and competitive diplomacy is the core gameplay element.</figcaption>
 						</figure>
 
 						<div className="mediaStack">
@@ -54,7 +54,7 @@ export default function TheGame(){
 							<p className="statLabel">rotating planets</p>
 						</div>
 						<div className="stat">
-							<p className="statNum">12</p>
+							<p className="statNum">15</p>
 							<p className="statLabel">vital resources</p>
 						</div>
 						<div className="stat">
@@ -69,39 +69,39 @@ export default function TheGame(){
 				<div className="wrap">
 					<h3 id="quickstart">How Power &amp; Peace works:</h3>
 					<p className="micro">
-						A live geopolitical ecosystem where diplomacy, logistics, and crisis-response happen simultaneously.
+						A live geopolitical ecosystem where diplomacy, logistics, negotiation, and crisis-response happen simultaneously.
 					</p>
 
 					<div className="grid two">
 						<div className="card">
-							<h4>1) You run a nation</h4>
+							<h4>1) Managing a country</h4>
 							<p>
-								Each team represents a nation (A–Z) with its own needs, strengths, and constraints.
-								Your goal is to increase prosperity without collapsing your resource pipeline.
+								Each team inherits a distinct Nation with its own needs, strengths, and constraints.
+								To win, a Nation must increase domestic prosperity while resolving all their crises and international conflicts by the end, making gameplay both collaborative and competitive.
 							</p>
 						</div>
 
 						<div className="card">
 							<h4>2) Resources drive everything</h4>
 							<p>
-								Food. Iron. Oil. And more. The economy is a living supply chain: trade routes,
-								shortages, and partnerships create both leverage and vulnerability.
+								Just like real life, the economy is a living supply chain. Different trade routes,
+								shortages, and partnerships can create both strategic leverage and vulnerability. Players experience the dynamics of supply and demand directly through their actions and decision making.
 							</p>
 						</div>
 
 						<div className="card">
-							<h4>3) Time never stops</h4>
+							<h4>3) It's always everyone's turn</h4>
 							<p>
-								A <strong>5-minute interval clock</strong> acts like a universal “tick”, rotating the 4 planets.
-								If you wait, the world moves without you.
+								The <strong>interval clock</strong>, a <strong>5-minute</strong> timer, acts like a universal turn counter for every single piece on the board.
+								But if you wait, the world moves without you; the planet rotations dictate certain windows of opportunity.
 							</p>
 						</div>
 
 						<div className="card">
 							<h4>4) Diplomacy is the main mechanic</h4>
 							<p>
-								Negotiation is constant. Alliances, trade deals, conflict prevention, peacekeeping,
-								power plays. Conversations are the engine that changes outcomes.
+								Negotiation is constant, and players' conversation- and decision-making skills are under high pressure. Alliances, trade deals, conflict solving, and new crises
+								are always shifting the circumstances and occur all in real-time.
 							</p>
 						</div>
 					</div>
@@ -112,15 +112,15 @@ export default function TheGame(){
 				<div className="wrap">
 					<div className="featureRow">
 						<div className="featureText">
-							<h3>What “turnless” really means</h3>
+							<h3>Turnless Gameplay</h3>
 							<p>
-								Power &amp; Peace is designed so <strong> everyone is always in motion</strong>. The planets rotate continuously, and every 5 minute interval updates the simulation conditions.
-								Players stay engaged by doing what leaders do: communicating, adapting, and making tradeoffs in real time.
+								Power &amp; Peace is uniquely designed so <strong>everyone is always in control</strong>. Unlike the traditional models for game mechanics in turn-based board games and geopolitical simulations, our innovative mechanics facilitate <strong>simultaneous action</strong> from any and all players at once.
+								Players stay engaged doing what leaders do: taking action, communicating, adapting, and critical thinking in real time.
 							</p>
 
 							<div className="callout">
-								<p><strong>No turns</strong> → no bottlenecks.</p>
-								<p><strong>No dice</strong> → no random chance. Outcomes come from your decisions, coordination, and constraints.</p>
+								<p><strong>No turns</strong> → No down-time or waiting to do something again</p>
+								<p><strong>No dice</strong> → No random chance or "gamification"</p>
 							</div>
 						</div>
 
@@ -133,15 +133,15 @@ export default function TheGame(){
 
 					<div className="featureRow reverse">
 						<div className="featureText">
-							<h3>What’s on the table</h3>
+							<h3>The Game Board</h3>
 
 							<ul className="bullets">
-								<li><strong>4 rotating planets</strong> (a changing geography that forces re-planning)</li>
-								<li><strong>26 nations</strong> (flexible for smaller groups)</li>
-								<li><strong>12 vital resources</strong> with real supply-chain consequences</li>
-								<li><strong>Natural + geopolitical crises</strong> that disrupt, reward preparation, and create moral dilemmas</li>
-								<li><strong>Movement / conflict system</strong> synchronized to the interval clock</li>
-								<li><strong>Facilitator-light</strong> flow (the system keeps moving; the room drives the story)</li>
+								<li><strong>4 rotating planets</strong> with different terrains, climates, and natural resources</li>
+								<li><strong>26 unique nations</strong> from A—Z (modular for smaller groups)</li>
+								<li><strong>15 vital resources</strong> with coordinated supply chains and tangible importance</li>
+								<li><strong>Natural + geopolitical crises</strong> that disrupt, overwhelm, and require teamwork</li>
+								<li><strong>Movement system / piece mechanics</strong> synchronized to the interval clock</li>
+								<li><strong>Facilitator-light</strong> so that educators can give individualized attention</li>
 							</ul>
 						</div>
 
@@ -154,29 +154,52 @@ export default function TheGame(){
 
 					<div className="featureRow">
 						<div className="featureText">
-							<h3>What a session feels like</h3>
+							<h3>Stages of the Simulation</h3>
 
 							<ol className="steps">
-								<li><strong>Briefing:</strong> nations, objectives, and the world’s pressure points.</li>
-								<li><strong>Intervals begin:</strong> trade talks, alliances, and logistics start immediately.</li>
-								<li><strong>Crises hit:</strong> shortages, climate events, and geopolitical flashpoints force choices.</li>
-								<li><strong>Compounding outcomes:</strong> smart preparation pays; neglect becomes expensive.</li>
-								<li><strong>Debrief:</strong> students connect decisions to systems, incentives, and real-world parallels.</li>
+								<li><strong>Briefing:</strong> Introducing the Nations, Crises, and four planets,</li>
+								<li><strong>Intervals begin:</strong> trade talks, domestic agendas, and logistics emerge immediately.</li>
+								<li><strong>Mid-Game Crises hit:</strong> shortages, climate events, and selfish decisions create more conflicts.</li>
+								<li><strong>Compounding outcomes:</strong> smart preparation often pays; neglect grows costly.</li>
+								<li><strong>Debrief:</strong> students make connections between in-game actions/decision-making and real-world parallels, such as historical events, social systems, and political moves.</li>
 							</ol>
 						</div>
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/jude2.jpeg" alt="image of game in action"/>
+								<img src="../src/assets/Screenshot_141204.png" alt="image of game in action"/>
 							</div>
 						</figure>
 					</div>
+
+					<div className="featureRow reverse">
+						<div className="featureText">
+							<h3>Educational Outcomes</h3>
+
+							<p>At the core of the game and its exigency are several interdisciplinary skills which we believe current education standards fail to adequately develop. Power & Peace is designed to immerse 21st century students in:</p>
+
+							<ul className="bullets">
+								<li><strong>Geopolitical Literacy</strong></li>
+								<li><strong>Budgeting and Resource Management</strong></li>
+								<li><strong>Macroeconomics</strong></li>
+								<li><strong>Negotiation, Diplomacy, and Compromise</strong></li>
+								<li><strong>Leadership and Teamwork</strong></li>
+							</ul>
+						</div>
+
+						<figure className="featureMedia">
+							<div className="imgPlaceholder">
+								<img src="../src/assets/9007.png" alt="board on table"/>
+							</div>
+						</figure>
 				</div>
+				</div>
+
 			</section>
 
 			<section className="section" aria-labelledby="whyfun">
 				<div className="wrap">
-					<h3 id="whyfun">Why it’s thought-provoking (and fun)</h3>
+					<h3 id="whyfun">Here's how it revolutionizes social studies</h3>
 					<p>
 						Power &amp; Peace turns big, abstract concepts into concrete decisions: scarcity, supply chains, incentives, trust, conflict, and cooperation.
 						Students don’t just learn <em>about</em> geopolitics — they <em>experience</em> the tension of making choices when there’s no perfect answer.
@@ -185,15 +208,15 @@ export default function TheGame(){
 					<div className="grid three">
 						<div className="card">
 							<h4>It rewards creativity</h4>
-							<p>Students invent deals, coalitions, and strategies that no script could predict.</p>
+							<p>Students invent their own deals, solutions, and strategies. Every session has completely unique outcomes.</p>
 						</div>
 						<div className="card">
 							<h4>It creates real stakes</h4>
-							<p>Every interval forces prioritization: protect people, stabilize resources, or gain leverage.</p>
+							<p>With tangible consequences, every interval forces prioritization: which resources and crises demand immediate attention?</p>
 						</div>
 						<div className="card">
 							<h4>It’s social by design</h4>
-							<p>Diplomacy is the core loop. Communication skills are not optional.</p>
+							<p>Like Model UN layered on top of trading and war-game frameworks, our socialized mechanics create dynamic turnless gameplay.</p>
 						</div>
 					</div>
 
@@ -202,14 +225,14 @@ export default function TheGame(){
 							<div className="imgPlaceholder"><img src="../src/assets/board1.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/9007.png" alt="image of game in action"/></div>
+							<div className="imgPlaceholder"><img src="../src/assets/editScreenshot_140814.png" alt="image of game in action"/></div>
 							
 						</figure>
 						<figure className="galleryItem">
 							<div className="imgPlaceholder"><img src="../src/assets/board5.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/talk.jpg" alt="founder presenting"/></div>
+							<div className="imgPlaceholder"><img src="../src/assets/Screenshot_140935.png" alt="playtest action"/></div>
 						</figure>
 					</div>
 				</div>

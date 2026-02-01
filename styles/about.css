@@ -579,3 +579,23 @@
 	width: 40%;
 	background: rgba(255,255,255,0.10);
 }
+
+.about__mission {
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about__missionTitle {
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 0.7rem;
+	opacity: 0.6;
+	margin-bottom: 0.6rem;
+}
+
+.about__missionText {
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.9);
+}
