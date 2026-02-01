@@ -2,11 +2,11 @@ import "../styles/playtests.css"
 import { useState } from "react";
 
 const images = [
-	"../src/assets/IMG_7784.jpg",
-	"../src/assets/IMG_7787.jpg",
-	"../src/assets/Screenshot_133012.png",
-	"../src/assets/IMG_9002.jpg",
-	"../src/assets/Screenshot_131924.png"
+	"/assets/IMG_7784.jpg",
+	"/assets/IMG_7787.jpg",
+	"/assets/Screenshot_133012.png",
+	"/assets/IMG_9002.jpg",
+	"/assets/Screenshot_131924.png"
     ];
 
 export default function Playtests(){
@@ -49,7 +49,7 @@ export default function Playtests(){
 					<div className="playtestsGrid">
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="../src/assets/IMG_7701.jpg" alt="image of game in action"/>
+                                <img src="/assets/IMG_7701.jpg" alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Goucher College</h3>
@@ -62,7 +62,7 @@ export default function Playtests(){
 
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="../src/assets/9007.png" alt="image of game in action"/>
+                                <img src="/assets/9007.png" alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Presentation of Mary</h3>
@@ -75,7 +75,7 @@ export default function Playtests(){
 
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="../src/assets/3656.png" alt="image of game in action"/>
+                                <img src="/assets/3656.png" alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">St. Jude the Apostle</h3>

@@ -8,7 +8,7 @@ export default function Home(){
 				{/* Option A (recommended): put file in /public/images/hero.jpg */}
 				<img
 					className="homeHeroImg"
-					src="../src/assets/board1.jpeg"
+					src="/assets/board1.jpeg"
 					alt=""
 					aria-hidden="true"
 				/>

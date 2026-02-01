@@ -21,7 +21,7 @@ export default function TheGame(){
 					<div className="heroMedia" aria-label="Game visuals">
 						<figure className="media primary">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/9370.png" alt="image of game in action"/>
+								<img src="/assets/9370.png" alt="image of game in action"/>
 							</div>
 							<figcaption>A real-time simulation game where simultaneously collaborative and competitive diplomacy is the core gameplay element.</figcaption>
 						</figure>
@@ -29,12 +29,12 @@ export default function TheGame(){
 						<div className="mediaStack">
 							<figure className="media">
 								<div className="imgPlaceholder">
-									<img src="../src/assets/board2.png" alt="Board closeup"/>
+									<img src="/assets/board2.png" alt="Board closeup"/>
 								</div>
 							</figure>
 							<figure className="media">
 								<div className="imgPlaceholder">
-									<img src="../src/assets/jude4c.jpeg" alt="image of game in action"/>
+									<img src="/assets/jude4c.jpeg" alt="image of game in action"/>
 								</div>
 							</figure>
 						</div>
@@ -126,7 +126,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/jude6.jpeg" alt="image of game in action"/>
+								<img src="/assets/jude6.jpeg" alt="image of game in action"/>
 							</div>
 						</figure>
 					</div>
@@ -147,7 +147,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/board4.jpeg" alt="board on table"/>
+								<img src="/assets/board4.jpeg" alt="board on table"/>
 							</div>
 						</figure>
 					</div>
@@ -167,7 +167,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/Screenshot_141204.png" alt="image of game in action"/>
+								<img src="/assets/Screenshot_141204.png" alt="image of game in action"/>
 							</div>
 						</figure>
 					</div>
@@ -189,7 +189,7 @@ export default function TheGame(){
 
 						<figure className="featureMedia">
 							<div className="imgPlaceholder">
-								<img src="../src/assets/9007.png" alt="board on table"/>
+								<img src="/assets/9007.png" alt="board on table"/>
 							</div>
 						</figure>
 				</div>
@@ -222,17 +222,17 @@ export default function TheGame(){
 
 					<div className="gallery" aria-label="Photo gallery">
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/board1.jpeg" alt="image of board closeup"/></div>
+							<div className="imgPlaceholder"><img src="/assets/board1.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/editScreenshot_140814.png" alt="image of game in action"/></div>
+							<div className="imgPlaceholder"><img src="/assets/editScreenshot_140814.png" alt="image of game in action"/></div>
 							
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/board5.jpeg" alt="image of board closeup"/></div>
+							<div className="imgPlaceholder"><img src="/assets/board5.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/Screenshot_140935.png" alt="playtest action"/></div>
+							<div className="imgPlaceholder"><img src="/assets/Screenshot_140935.png" alt="playtest action"/></div>
 						</figure>
 					</div>
 				</div>

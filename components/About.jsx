@@ -3,12 +3,12 @@ import "../styles/about.css"
 export default function About(){
 
 	const gallery = [
-        { src: "../src/assets/Screenshot_134135.png", alt: "Working in our old studio" },
-        { src: "../src/assets/7482.png", alt: "Design demo prototype" },
-		{ src: "../src/assets/drawing.jpg", alt: "Early prototype materials and layout" },
-        { src: "../src/assets/7409.png", alt: "Iteration notes and balance adjustments" },
-		{ src: "../src/assets/demo.jpg", alt: "Design sketches and systems planning" },
-		{ src: "../src/assets/presentation.jpg", alt: "Founder presenting the game concept" },
+        { src: "/assets/Screenshot_134135.png", alt: "Working in our old studio" },
+        { src: "/assets/7482.png", alt: "Design demo prototype" },
+		{ src: "/assets/drawing.jpg", alt: "Early prototype materials and layout" },
+        { src: "/assets/7409.png", alt: "Iteration notes and balance adjustments" },
+		{ src: "/assets/demo.jpg", alt: "Design sketches and systems planning" },
+		{ src: "/assets/presentation.jpg", alt: "Founder presenting the game concept" },
 	]
 
 	return (
@@ -47,7 +47,7 @@ export default function About(){
 					<figure className="about__heroMedia">
 						<img
 							className="about__heroImg"
-							src="../src/assets/p1.png"
+							src="/assets/p1.png"
 							alt="Power & Peace in action"
 							loading="lazy"
 						/>
@@ -117,7 +117,7 @@ export default function About(){
 					<figure className="about__founderMedia">
 						<img
 							className="about__founderImg"
-							src="../src/assets/IMG_7786.jpg"
+							src="/assets/IMG_7786.jpg"
 							alt="James Mullooly, Founder"
 							loading="lazy"
 						/>
