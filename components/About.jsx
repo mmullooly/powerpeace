@@ -127,7 +127,9 @@ export default function About(){
 					</figure>
 
 					<div className="about__founderText">
+						<span className="blockSpacer" />
 						<h2 className="about__h2">James Mullooly</h2>
+						<span className="blockSpacer" />
 						<p className="about__p">
 							James built Playbright around a straightforward question: how can we use gaming to best serve our society? As the creator of Power & Peace, he envisioned a better way for students to interact with the world’s toughest challenges — then built a team, company, and product to make that vision real.
 
@@ -165,8 +167,8 @@ export default function About(){
 					<li>OS and RTL design</li>
 				</ul>
 				<div className="about__mission">
-					<p className="about__missionTitle">The mission</p>
-					<p className="about__missionText">
+					<p className="about__orgEyebrow">The mission</p>
+					<p className="about__p">
 						The education landscape is changing — experiential learning is becoming increasingly valuable and sought after by teachers, schools, and districts. Playbright designs interactive
 						learning experiences that meet this moment with an evolution of game mechanics and education simulation quality.
 					</p>

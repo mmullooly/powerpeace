@@ -225,7 +225,7 @@ export default function TheGame(){
 							<div className="imgPlaceholder"><img src="../src/assets/board1.jpeg" alt="image of board closeup"/></div>
 						</figure>
 						<figure className="galleryItem">
-							<div className="imgPlaceholder"><img src="../src/assets/Screenshot_140814.png" alt="image of game in action"/></div>
+							<div className="imgPlaceholder"><img src="../src/assets/editScreenshot_140814.png" alt="image of game in action"/></div>
 							
 						</figure>
 						<figure className="galleryItem">
