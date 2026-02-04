@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Redirecting…</title>
+		<script>
+			// GitHub Pages SPA fallback:
+			// Store the intended path+query+hash, then redirect to / (index.html)
+			// where we will restore it.
+			(function () {
+				var l = window.location;
+				var redirect =
+					l.protocol + "//" + l.host + "/?__spa_path__=" +
+					encodeURIComponent(l.pathname + l.search + l.hash);
+
+				window.location.replace(redirect);
+			})();
+		</script>
+	</head>
+	<body></body>
+</html>
