@@ -52,7 +52,7 @@ export default function Playtests(){
 					<div className="playtestsGrid">
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src={`${base}assets/IMG_7701.jpg`} alt="image of game in action"/>
+                                <img src={`${base}assets/IMG_7701.JPG`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Goucher College</h3>
