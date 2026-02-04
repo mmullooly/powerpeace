@@ -1,12 +1,14 @@
 import "../styles/playtests.css"
 import { useState } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const images = [
-	"/assets/IMG_7784.jpg",
-	"/assets/IMG_7787.jpg",
-	"/assets/Screenshot_133012.png",
-	"/assets/IMG_9002.jpg",
-	"/assets/Screenshot_131924.png"
+	`${base}assets/IMG_7784.jpg`,
+	`${base}assets/IMG_7787.jpg`,
+	`${base}assets/Screenshot_133012.png`,
+	`${base}assets/IMG_9002.jpg`,
+	`${base}assets/Screenshot_131924.png`
     ];
 
 export default function Playtests(){
@@ -49,7 +51,7 @@ export default function Playtests(){
 					<div className="playtestsGrid">
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="/assets/IMG_7701.jpg" alt="image of game in action"/>
+                                <img src={`${base}assets/IMG_7701.jpg`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Goucher College</h3>
@@ -62,7 +64,7 @@ export default function Playtests(){
 
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="/assets/9007.png" alt="image of game in action"/>
+                                <img src={`${base}assets/9007.png`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">Presentation of Mary</h3>
@@ -75,7 +77,7 @@ export default function Playtests(){
 
 						<article className="playtestsCard">
 							<div className="playtestsImgPlaceholder">
-                                <img src="/assets/3656.png" alt="image of game in action"/>
+                                <img src={`${base}assets/3656.png`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">St. Jude the Apostle</h3>

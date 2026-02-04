@@ -8,7 +8,8 @@ export default function Home(){
 				{/* Option A (recommended): put file in /public/images/hero.jpg */}
 				<img
 					className="homeHeroImg"
-					src="/assets/board1.jpeg"
+					src={`${import.meta.env.BASE_URL}assets/board1.jpeg`}
+
 					alt=""
 					aria-hidden="true"
 				/>

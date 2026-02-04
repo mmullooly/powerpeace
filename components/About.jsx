@@ -2,14 +2,16 @@ import "../styles/about.css"
 
 export default function About(){
 
+	const base = import.meta.env.BASE_URL;
+
 	const gallery = [
-        { src: "/assets/Screenshot_134135.png", alt: "Working in our old studio" },
-        { src: "/assets/7482.png", alt: "Design demo prototype" },
-		{ src: "/assets/drawing.jpg", alt: "Early prototype materials and layout" },
-        { src: "/assets/7409.png", alt: "Iteration notes and balance adjustments" },
-		{ src: "/assets/demo.jpg", alt: "Design sketches and systems planning" },
-		{ src: "/assets/presentation.jpg", alt: "Founder presenting the game concept" },
-	]
+		{ src: `${base}assets/Screenshot_134135.png`, alt: "Working in our old studio" },
+		{ src: `${base}assets/7482.png`, alt: "Design demo prototype" },
+		{ src: `${base}assets/drawing.jpg`, alt: "Early prototype materials and layout" },
+		{ src: `${base}assets/7409.png`, alt: "Iteration notes and balance adjustments" },
+		{ src: `${base}assets/demo.jpg`, alt: "Design sketches and systems planning" },
+		{ src: `${base}assets/presentation.jpg`, alt: "Founder presenting the game concept" },
+	];
 
 	return (
 		<main className="about">
@@ -47,7 +49,7 @@ export default function About(){
 					<figure className="about__heroMedia">
 						<img
 							className="about__heroImg"
-							src="/assets/p1.png"
+							src={`${import.meta.env.BASE_URL}assets/p1.png`}
 							alt="Power & Peace in action"
 							loading="lazy"
 						/>
@@ -117,7 +119,7 @@ export default function About(){
 					<figure className="about__founderMedia">
 						<img
 							className="about__founderImg"
-							src="/assets/IMG_7786.jpg"
+							src={`${import.meta.env.BASE_URL}assets/IMG_7786.jpg`}
 							alt="James Mullooly, Founder"
 							loading="lazy"
 						/>

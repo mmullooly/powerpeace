@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const isGhPages = process.env.GITHUB_PAGES === "true";
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -10,5 +12,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/powerpeace/',
+  base: isGhPages ? "/powerpeace/" : "/",
 })
