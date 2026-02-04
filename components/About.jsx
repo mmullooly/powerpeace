@@ -234,8 +234,8 @@ export default function About(){
 					</div>
 
 					<div className="about__actions">
-						<a className="about__btn about__btn--primary" href="/contact">Get in Touch</a>
-						<a className="about__btn about__btn--ghost" href="/">Back to Home</a>
+						<Link className="about__btn about__btn--primary" to="/contact">Get in Touch</Link>
+						<Link className="about__btn about__btn--ghost" to="/">Back to Home</Link>
 					</div>
 				</div>
 			</section>

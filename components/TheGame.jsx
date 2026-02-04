@@ -1,4 +1,5 @@
 import "../styles/game.css"
+import { Link } from "react-router-dom";
 
 export default function TheGame(){
 	return(
@@ -14,8 +15,8 @@ export default function TheGame(){
 					</p>
 
 					<div className="ctaRow">
-						<a className="btn primary" href="/contact">Schedule a playtest</a>
-						<a className="btn secondary" href="/playtests">Past playtests</a>
+						<Link className="btn primary" to="/contact">Schedule a playtest</Link>
+						<Link className="btn secondary" to="/playtests">Past playtests</Link>
 					</div>
 
 					<div className="heroMedia" aria-label="Game visuals">
@@ -245,8 +246,8 @@ export default function TheGame(){
 						<p>Tell us your group size and setting. We’ll recommend a session format and next steps.</p>
 
 						<div className="ctaRow">
-							<a className="btn primary" href="/contact">Request Information</a>
-							<a className="btn secondary" href="/playtests">View past playtests</a>
+							<Link className="btn primary" to="/contact">Request Information</Link>
+							<Link className="btn secondary" to="/playtests">View past playtests</Link>
 						</div>
 					</div>
 				</div>

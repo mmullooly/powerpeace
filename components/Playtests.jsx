@@ -88,26 +88,26 @@ export default function Playtests(){
 
 						<article className="playtestsCard playtestsCardWide">
 							<div className="playtestsCarousel">
-		<img
-			src={images[current]}
-			alt="Playtest"
-			className="playtestsCarouselImg"
-		/>
+								<img
+									src={images[current]}
+									alt="Playtest"
+									className="playtestsCarouselImg"
+								/>
 
-		<button
-			className="carouselBtn prev"
-			onClick={() => setCurrent((current - 1 + images.length) % images.length)}
-		>
-			‹
-		</button>
+								<button
+									className="carouselBtn prev"
+									onClick={() => setCurrent((current - 1 + images.length) % images.length)}
+								>
+									‹
+								</button>
 
-		<button
-			className="carouselBtn next"
-			onClick={() => setCurrent((current + 1) % images.length)}
-		>
-			›
-		</button>
-	</div>
+								<button
+									className="carouselBtn next"
+									onClick={() => setCurrent((current + 1) % images.length)}
+								>
+									›
+								</button>
+							</div>
 							<div className="playtestsCardBody">
 								<h3 className="playtestsCardTitle">About our Playtests</h3>
 								
@@ -217,7 +217,7 @@ export default function Playtests(){
 						<p>Just tell us your group size and setting to start planning today!</p>
 
 						<div className="ctaRowplaytest">
-							<a className="btnPlay primary" href="/contact">Request Information</a>
+							<Link className="btnPlay primary" to="/contact">Request Information</Link>
 						</div>
 					</div>
 				</div>
