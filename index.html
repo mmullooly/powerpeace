@@ -10,5 +10,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var saved = params.get("__spa_path__");
+        if (saved) {
+          params.delete("__spa_path__");
+          var newSearch = params.toString();
+          var url = window.location.origin + decodeURIComponent(saved) + (newSearch ? (saved.indexOf("?") === -1 ? "?" : "&") + newSearch : "");
+          window.history.replaceState(null, "", url);
+        }
+      })();
+    </script>
   </body>
 </html>
