@@ -1,15 +1,15 @@
 {
-  "name": "powerpeacespa",
+  "name": "powerpeace",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://mmullooly.github.io/powerpeace",
+  "homepage": "https://powerpeace.org",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "GITHUB_PAGES=true npm run build",
+    "predeploy": "GITHUB_PAGES=false npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
