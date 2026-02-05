@@ -12,6 +12,14 @@ export default function Navbar() {
 					</div>
 				</NavLink>
 
+				{/* Home icon (mobile only) */}
+				<NavLink
+					to="/" end className="homeIconLink" aria-label="Home" title="Home">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M12 3.2 2.5 11h1.8v9.8h6.2v-6h3v6h6.2V11h1.8L12 3.2z" />
+					</svg>
+				</NavLink>
+
 				<div className="navLinks">
 					<NavLink to="/theGame" end className={({ isActive }) => (isActive ? "active" : "")}>
 						The Game
