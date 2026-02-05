@@ -15,22 +15,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 18px;
+	gap: 16px;
 	max-width: var(--maxw);
 	margin: 0 auto;
 	padding: 14px var(--pad);
+	box-sizing: border-box;
 }
 
 .brandLink{
 	text-decoration: none;
 	color: inherit;
 	display: inline-flex;
+	min-width: 0;
+	overflow: hidden;
+	flex: 0 1 auto;
 }
 
 .brand{
-	display: flex;
-	flex-direction: column;
-	line-height: 1.1;
+	min-width: 0;
 }
 
 .brand span:first-child{
@@ -43,6 +45,13 @@
 	color: var(--muted);
 }
 
+.brand span{
+	display: block;
+	white-space: nowrap;		/* no wrap */
+	overflow: hidden;			/* clip */
+	text-overflow: ellipsis;	/* … */
+}
+
 /* optional: make it feel clickable */
 .brandLink:hover .brand span:first-child{
 	color: white;
@@ -52,16 +61,20 @@
 	display: flex;
 	gap: 10px;
 	align-items: center;
+	flex: 1 1 auto;
+	min-width: 0;
+	justify-content: flex-end;
 }
 
 .navLinks a{
-	padding: 7px 11px;
+	padding: 7px 9px;
 	border-radius: 10px;
 	color: var(--muted);
 	border: 1px solid transparent;
 	font-size: 0.95rem;
 	line-height: 1.1;
 	text-decoration: none;
+	white-space: nowrap;
 }
 
 .navLinks a:hover{
@@ -74,4 +87,20 @@
 	color: white;
 	border-color: rgba(47,224,200,0.35);
 	background: rgba(47,224,200,0.10);
+}
+
+@media (max-width: 820px){
+	.navInner{
+		gap: 10px;
+	}
+
+	.navLinks{
+		gap: 6px;
+	}
+
+	.navLinks a{
+		font-size: 0.9rem;
+		padding: 6px 6px;
+	}
+	
 }

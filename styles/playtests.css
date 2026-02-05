@@ -84,6 +84,7 @@
 }
 
 .playtestsCard{
+	position: relative;
 	border-radius: 18px;
 	overflow: hidden;
 	display: flex;
@@ -110,23 +111,48 @@
 	min-height: 260px;
 }
 
+
 .playtestsCardBody{
-	padding: 18px 16px 20px 16px;
+	padding: 18px 16px 20px 10px;
+	margin-top: -30px; /* adjust 36–56px to taste */
+	position: relative;
+	z-index: 2;
+}
+/* Rounded “bar” behind title/meta */
+.playtestsCardHeaderBar{
+	display: inline-block; /* shrink to content width */
+	max-width: 100%;
+	padding: 12px 14px;
+	border-radius: 16px;
+	background: rgba(10, 12, 18, 0.72);
+	border: 1px solid rgba(255,255,255,0.14);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+}
+
+/* Tighten spacing inside the bar */
+.playtestsCardHeaderBar .playtestsCardTitle{
+	margin: 0;
+}
+
+.playtestsCardHeaderBar .playtestsCardMeta{
+	margin: 6px 0 0 0;
 }
 
 .playtestsCardTitle{
-	margin: 0;
+	margin: 20px;
 	font-size: 20px;
 }
 
 .playtestsCardMeta{
-	margin: 8px 0 0 0;
+	margin: 6px 0 0 0;
 	opacity: 0.75;
 	font-size: 14px;
 }
 
 .playtestsCardText{
-	margin: 12px 0 0 0;
+	margin: 14px 0 0 0;
 	line-height: 1.7;
 	opacity: 0.9;
 }

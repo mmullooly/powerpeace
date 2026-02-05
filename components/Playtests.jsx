@@ -55,8 +55,10 @@ export default function Playtests(){
                                 <img src={`${base}assets/IMG_7701.jpg`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
+								<div className="playtestsCardHeaderBar">
 								<h3 className="playtestsCardTitle">Goucher College</h3>
 								<p className="playtestsCardMeta">2024 • Baltimore, MD</p>
+								</div>
 								<p className="playtestsCardText">
 									The game began development as James Mullooly's senior capstone project and was first played in May 2024.
 								</p>
@@ -68,8 +70,10 @@ export default function Playtests(){
                                 <img src={`${base}assets/9007.png`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
+								<div className="playtestsCardHeaderBar">
 								<h3 className="playtestsCardTitle">Presentation of Mary</h3>
 								<p className="playtestsCardMeta">2025 • St. Paul, MN</p>
+								</div>
 								<p className="playtestsCardText">
 									Our first classroom playtest with 8th graders, which emphatically proved the success, value, and demand for the game.
 								</p>
@@ -81,8 +85,10 @@ export default function Playtests(){
                                 <img src={`${base}assets/3656.png`} alt="image of game in action"/>
                             </div>
 							<div className="playtestsCardBody">
+								<div className="playtestsCardHeaderBar">
 								<h3 className="playtestsCardTitle">St. Jude the Apostle</h3>
 								<p className="playtestsCardMeta">2025 • Milwaukee, WI</p>
+								</div>
 								<p className="playtestsCardText">
 									We succcessfully stress-tested our innovative turnless, diceless, real-time game mechanics with 48 simultaneous players.
 								</p>

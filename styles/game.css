@@ -279,6 +279,34 @@
 	max-width: none;
 }
 
+/* Mobile only */
+/* Mobile only */
+@media (max-width: 640px){
+	.the-game .statsRow{
+		grid-template-columns: repeat(6, 1fr);
+		gap: 10px;
+		width: 100%;
+		justify-items: stretch;
+	}
+
+	.the-game .statsRow .stat{
+		min-width: 0;
+	}
+
+	/* Top row: 2 equal items (3/6 each) */
+	.the-game .statsRow .stat:nth-child(1),
+	.the-game .statsRow .stat:nth-child(2){
+		grid-column: span 3;
+	}
+
+	/* Bottom row: 3 equal items (2/6 each) */
+	.the-game .statsRow .stat:nth-child(3),
+	.the-game .statsRow .stat:nth-child(4),
+	.the-game .statsRow .stat:nth-child(5){
+		grid-column: span 2;
+	}
+}
+
 /* Section headings */
 .the-game h3{
 	margin: 0 0 10px;
