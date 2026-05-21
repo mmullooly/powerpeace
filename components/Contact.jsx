@@ -2,7 +2,7 @@
 import "../styles/contact.css";
 
 export default function Contact(){
-	const emailAddress = "james@powerpeace.org";
+	const emailAddress = "jtmullooly@gmail.com";
 
 	const handleCopyEmail = async () => {
 		try{
