@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from '../components/Home';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Playtests from '../components/Playtests';
-import TheGame from '../components/TheGame';
-import ScrollToTop from '../components/ScrollToTop';
-import Navbar from '../components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Playtests from './components/Playtests';
+import TheGame from './components/TheGame';
+import ScrollToTop from './components/ScrollToTop';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
